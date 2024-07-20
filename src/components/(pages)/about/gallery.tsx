@@ -7,6 +7,7 @@ export default function PhotoGallery() {
         <div className="upper">
           <div className="img-wrapper">
             <Image
+              priority
               alt=""
               src="/img/gallery/upper.png"
               width={7290}
@@ -17,6 +18,7 @@ export default function PhotoGallery() {
         <div className="lower">
           <div className="img-wrapper">
             <Image
+              priority
               alt=""
               src="/img/gallery/lower.png"
               width={7290}
