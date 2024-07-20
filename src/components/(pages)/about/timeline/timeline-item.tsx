@@ -14,9 +14,10 @@ interface Gen {
 
 interface TimelineProps {
   gens: Gen[];
+  setPopUpActive: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default function TimelineItem({ gens }: TimelineProps) {
+export default function TimelineItem({ gens, setPopUpActive }: TimelineProps) {
   useEffect(() => {
     const items = document.querySelectorAll(".timeline-item");
 
@@ -59,8 +60,14 @@ export default function TimelineItem({ gens }: TimelineProps) {
     };
   }, [gens]);
 
-  function handleOnClick(genName: any) {
-    window.location.href = "/about/" + genName.replace(/\s+/g, "");
+  function handleOnClick(gen: any) {
+    const hasEmptyField = Object.values(gen).some((value) => value === "");
+
+    if (hasEmptyField) {
+      setPopUpActive(true);
+      return;
+    }
+    window.location.href = "/about/" + gen.name.replace(/\s+/g, "");
   }
 
   return (
@@ -69,7 +76,7 @@ export default function TimelineItem({ gens }: TimelineProps) {
         <div
           key={gen.id}
           className={`timeline-item ${index % 2 === 0 ? "odd" : "even"}`}
-          onClick={() => handleOnClick(gen.name)}
+          onClick={() => handleOnClick(gen)}
         >
           <div className="seeMoreWrapper">Click To See More Story</div>
           <TimelineContent gens={gen} />

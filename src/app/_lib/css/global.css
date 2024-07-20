@@ -1897,3 +1897,77 @@ header.nav.active .burgerBtn-icon {
   height: 100%;
   width: auto;
 }
+
+.notFound-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: #1c488a44;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  backdrop-filter: blur(3px);
+  display: none;
+}
+
+.notFound-container .wrapper {
+  width: 600px;
+  height: 300px;
+  background-color: var(--white);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 3px 3px 5px 3px #00000052;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.notFound-container .wrapper p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.notFound-container .wrapper button {
+  width: 70%;
+  background-color: var(--orange-himsi);
+  color: var(--white);
+  margin-top: 0px;
+}
+
+.notFound-container .wrapper img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: -145px;
+  right: 0;
+}
+
+.notFound-container.active {
+  display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

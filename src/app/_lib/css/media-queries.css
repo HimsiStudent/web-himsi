@@ -1,4 +1,7 @@
 @media screen and (min-width: 2370px) {
+  .timeline .wrapper {
+    width: 85%;
+  }
   .event-card-inner .back .desc-event p {
     font-size: 1.55rem;
   }
@@ -825,6 +828,15 @@
 }
 
 @media screen and (max-width: 700px) {
+  .notFound-container .wrapper {
+    width: 400px;
+    height: 300px;
+    gap: 20px;
+  }
+
+  .notFound-container .wrapper p {
+    font-size: 1.3rem;
+  }
   .timeline h1 {
     font-size: 3rem;
     letter-spacing: 5px;
@@ -959,13 +971,6 @@
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
-  }
-  .timeline .wrapper .line.orange {
-    transition: 0.1s ease-in-out;
-    -webkit-transition: 0.1s ease-in-out;
-    -moz-transition: 0.1s ease-in-out;
-    -ms-transition: 0.1s ease-in-out;
-    -o-transition: 0.1s ease-in-out;
   }
 
   .whoAreWe p {
@@ -1142,6 +1147,10 @@
 }
 
 @media screen and (max-width: 426px) {
+  .notFound-container .wrapper {
+    width: 90%;
+    height: 300px;
+  }
   .timeline .dot-wrapper {
     width: 6%;
   }

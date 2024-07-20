@@ -12,7 +12,13 @@ type Gen = {
   desc: string;
 };
 
-export default function HeroSectionAbout({ gens }: { gens: Gen[] }) {
+export default function HeroSectionAbout({
+  gens,
+  setPopUpActive,
+}: {
+  gens: Gen[];
+  setPopUpActive: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const filteredGens = gens.filter((gen) => gen.pict !== "");
   const genLength = filteredGens.length - 1;
   const [carouselIndex, setCarouselIndex] = useState(genLength);
@@ -46,9 +52,15 @@ export default function HeroSectionAbout({ gens }: { gens: Gen[] }) {
     setIsPaused(false);
   };
 
-  const handleOnClick = () => {
-    window.location.href = "/home";
-  };
+  function handleOnClick(gen: any) {
+    const hasEmptyField = Object.values(gen).some((value) => value === "");
+
+    if (hasEmptyField) {
+      setPopUpActive(true);
+      return;
+    }
+    window.location.href = "/about/" + gen.name.replace(/\s+/g, "");
+  }
 
   return (
     <>
@@ -89,7 +101,10 @@ export default function HeroSectionAbout({ gens }: { gens: Gen[] }) {
                 <h2>Who are they?</h2>
                 <p className="no-cut-desc">{gen.desc}</p>
                 <p className="cut-desc">{truncateText(gen.desc, 30)}</p>
-                <button className="btn-style-1" onClick={handleOnClick}>
+                <button
+                  className="btn-style-1"
+                  onClick={() => handleOnClick(gen)}
+                >
                   Learn More
                 </button>
               </div>

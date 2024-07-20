@@ -16,9 +16,10 @@ interface Gen {
 
 interface TimelineProps {
   gens: Gen[];
+  setPopUpActive: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default function Timeline({ gens }: TimelineProps) {
+export default function Timeline({ gens, setPopUpActive }: TimelineProps) {
   const timelineRef = useRef<HTMLElement>(null);
 
   return (
@@ -30,7 +31,7 @@ export default function Timeline({ gens }: TimelineProps) {
       <div className="wrapper">
         <TimelineLine gens={gens} timelineRef={timelineRef} />
         <TimelineDot gens={gens} />
-        <TimelineItem gens={gens} />
+        <TimelineItem gens={gens} setPopUpActive={setPopUpActive} />
       </div>
     </section>
   );
