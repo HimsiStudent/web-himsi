@@ -238,10 +238,7 @@
     width: 400px;
     height: 450px;
   }
-  /* .event-container {
-    height: 700px;
-    margin-top: 30px;
-  } */
+
   .bimsi-wrapper h1 {
     font-size: 2.5rem;
     letter-spacing: 10px;
@@ -962,6 +959,13 @@
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
+  }
+  .timeline .wrapper .line.orange {
+    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
   }
 
   .whoAreWe p {
