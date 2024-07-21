@@ -184,6 +184,9 @@
   }
 }
 @media screen and (max-width: 1440px) {
+  .genStory-hero {
+    height: 60vh;
+  }
   .timeline .wrapper {
     padding-inline: 8vw;
   }
@@ -293,6 +296,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .genStory-hero {
+    height: 50vh;
+  }
   .fam-tag-container blockquote {
     padding: 20px;
   }
@@ -618,6 +624,9 @@
   }
 }
 @media screen and (max-width: 850px) {
+  .genStory-hero {
+    height: 40vh;
+  }
   .timeline .wrapper .line {
     max-height: calc(100% - 500px);
   }
@@ -759,6 +768,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .genStory-details-container h1 q {
+    font-size: 2rem;
+  }
+  .genStory-details-container h3 {
+    font-size: 3.5rem;
+  }
+  .genStory-details-container p {
+    padding-inline: 70px;
+  }
   .timeline .dot-wrapper {
     height: calc(100% - 300px);
     left: calc(8% - 11px);
@@ -922,6 +940,19 @@
 }
 
 @media screen and (max-width: 576px) {
+  /* .genStory-hero {
+    height: 20vh;
+  } */
+  .genStory-details-container h1 {
+    font-size: 3.5rem;
+  }
+  .genStory-details-container h3 {
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+  }
+  .genStory-details-container p {
+    padding-inline: 50px;
+  }
   .gallery-container .upper .img-wrapper,
   .gallery-container .lower .img-wrapper {
     height: 100px;
@@ -1147,6 +1178,24 @@
 }
 
 @media screen and (max-width: 426px) {
+  .genStory-details-container h3 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+  .genStory-details-container p {
+    font-size: 1.2rem;
+    padding-inline: 30px;
+  }
+  .genStory-details-container h1 {
+    font-size: 3rem;
+  }
+  .genStory-details-container h1 small {
+    font-size: 1.2rem;
+  }
+  .genStory-details-container h1 q {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
   .notFound-container .wrapper {
     width: 90%;
     height: 300px;

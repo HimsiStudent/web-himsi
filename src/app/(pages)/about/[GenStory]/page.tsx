@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { gens } from "../data";
-import GenStoryHero from "@/components/(pages)/about/genStory/genStory-container";
+import GenStoryHero from "@/components/(pages)/about/genStory/genStory-hero";
+import GenStoryDetails from "@/components/(pages)/about/genStory/genStory-details";
 
 const GenName = (input: string): string => {
   if (input.length > 3) {
@@ -31,6 +32,7 @@ export default function GenStory({ params }: { params: { GenStory: string } }) {
   return (
     <>
       <GenStoryHero gen={gen} />
+      <GenStoryDetails gen={gen} />
     </>
   );
 }

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Gen {
   id: number;
   name: string;
@@ -15,7 +17,9 @@ export default function GenStoryHero({ gen }: TimelineProps) {
   }
   return (
     <>
-      <p>{gen.year}</p>
+      <section className="genStory-hero">
+        <Image priority alt="" src={gen.pict} width={3000} height={3000} />
+      </section>
     </>
   );
 }
