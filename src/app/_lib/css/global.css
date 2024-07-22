@@ -230,6 +230,7 @@ header.nav.active .services.active {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   pointer-events: none;
+  user-select: none;
 }
 
 .logo-wrapper {
