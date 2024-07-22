@@ -30,23 +30,23 @@ export default function Footer() {
               <li>
                 <a href="/">Home</a>
               </li>
-              |
+              <li>|</li>
               <li>
                 <a href="/about">About Us</a>
               </li>
-              |
+              <li>|</li>
               <li>
                 <a href="/event">Events</a>
               </li>
-              |
+              <li>|</li>
               <li>
                 <a href="/himfact">HIMFACT</a>
               </li>
-              |
+              <li>|</li>
               <li>
                 <a href="/bimsi">BIMSI</a>
               </li>
-              |
+              <li>|</li>
               <li>
                 <a href="/aspiration">Aspiration</a>
               </li>
