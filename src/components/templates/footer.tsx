@@ -80,7 +80,7 @@ export default function Footer() {
               <div className="contact-footer">
                 <ul>
                   <li>
-                    <LineLogo />s
+                    <LineLogo />
                     <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=886rxfyx">
                       @886rxfyx
                     </a>
