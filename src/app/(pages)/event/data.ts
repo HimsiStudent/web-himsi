@@ -3,7 +3,7 @@ export const eventUrl = [
     id: 1,
     name: "ISFEST",
     url: "/img/event/isfest.webp",
-    logo: "/img/logo-isfest.webp  ",
+    logo: "/img/logo-isfest.webp",
     desc: "Information System Festival (ISFEST) is a HIMSI program designed to support the development of both academic and non-academic skills, open to students from all over Indonesia. ISFEST features a series of academic competitions related to the Information Systems study program, as well as non-academic competitions in the field of E-Sports. The event also includes a talk show with competent speakers in the field of Information Systems, presenting material that can be understood by all audiences to enhance their understanding of technology from an Information Systems perspective.",
   },
   {
