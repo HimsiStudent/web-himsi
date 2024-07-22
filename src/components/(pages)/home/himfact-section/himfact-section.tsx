@@ -25,7 +25,7 @@ export default function HimfactSection() {
             window.open("https://instagram.com/sibe_siumn", "_blank");
           }}
         >
-          <Link href="/himfact">View More Product</Link>
+          <a>View More Product</a>
         </button>
       </div>
       <div className="right">

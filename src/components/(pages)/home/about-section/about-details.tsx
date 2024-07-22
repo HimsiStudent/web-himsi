@@ -22,10 +22,10 @@ export default function AboutDetails() {
       </p>
       <div className="btn-wrapper">
         <button className="btn-style-1" onClick={handleOnClick}>
-          <Link href="/about">Explore Our Journey</Link>
+          <a>Explore Our Journey</a>
         </button>
         <button onClick={handleOnClickEvent} className="btn-style-1">
-          <Link href="/event">Check Our Events</Link>
+          <a>Check Our Events</a>
         </button>
       </div>
     </article>
