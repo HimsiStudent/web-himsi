@@ -11,7 +11,7 @@ export default function MainEvents() {
       eventName: "ISFEST",
       url: "/img/compile-isfest.png",
       logo: "/img/logo-isfest.png",
-      desc: "Information System Festival (ISFEST) merupakan program kerja HIMSI dalam mendukung pengembangan akademik dan non-akademik yang dapat diikuti oleh seluruh mahasiswa dan pelajar dari seluruh Indonesia. ISFEST berisikan rangkaian kegiatan perlombaan di bidang akademik yang berhubungan dengan program studi Sistem Informasi dan perlombaan non-akademik dalam bidang E-Sports Rangkaian kegiatan ISFEST juga berisikan Talkshow dengan menghadirkan pembicara-pembiacara yang kompeten dalam bidang Sistem Informasi dengan isi materi yang dapat diterima oleh seluruh kalangan dari dalam memahami teknologi dari sisi Sistem Informasi.",
+      desc: "Information System Festival (ISFEST) is a HIMSI program designed to support the development of both academic and non-academic skills, open to students from all over Indonesia. ISFEST features a series of academic competitions related to the Information Systems study program, as well as non-academic competitions in the field of E-Sports. The event also includes a talk show with competent speakers in the field of Information Systems, presenting material that can be understood by all audiences to enhance their understanding of technology from an Information Systems perspective.",
       isFlipped: false,
     },
     {
@@ -19,7 +19,7 @@ export default function MainEvents() {
       eventName: "prastavana",
       url: "/img/compile-perprod.png",
       logo: "/img/logo-perprod.png",
-      desc: "PRASTAVANA 2024, di bawah Himpunan Mahasiswa Sistem Informasi, bertujuan memperkenalkan Program Studi Sistem Informasi kepada mahasiswa baru dengan tema 𝚃𝚛𝚊𝚗𝚜𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚃𝚘𝚠𝚊𝚛𝚍𝚜 𝚃𝚑𝚎 𝙵𝚞𝚝𝚞𝚛𝚎 dan tagline 𝑩𝒂𝒏𝒈𝒌𝒊𝒕𝒌𝒂𝒏 𝑲𝒓𝒆𝒂𝒕𝒊𝒗𝒊𝒕𝒂𝒔, 𝑪𝒊𝒑𝒕𝒂𝒌𝒂𝒏 𝑰𝒏𝒐𝒗𝒂𝒔𝒊. Tema ini mendorong mahasiswa baru untuk menghadapi tantangan perkuliahan dengan semangat dan pola pikir terbuka, mengenali potensi diri, serta merancang perjalanan akademik sesuai tujuan. Tagline tersebut mengajak mereka meningkatkan kreativitas dan inovasi, berpikir di luar batasan, menciptakan solusi baru, dan menjadi penggerak perubahan dalam lingkungan akademik yang mendorong eksperimen dan kolaborasi.",
+      desc: 'PRASTAVANA 2024, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students with the theme "Transformation Towards The Future" and the tagline "Ignite Creativity, Create Innovation." This theme encourages new students to approach their academic challenges with enthusiasm and an open mindset, recognize their potential, and design their academic journey according to their goals. The tagline inspires them to enhance creativity and innovation, think beyond boundaries, create new solutions, and become change-makers in an academic environment that fosters experimentation and collaboration.',
       isFlipped: false,
     },
     {
@@ -27,7 +27,7 @@ export default function MainEvents() {
       eventName: "DISCO",
       url: "/img/compile.png",
       logo: "/img/logo-disco.png",
-      desc: "D’Information System Community Outbond (DISCO) merupakan program kerja tahunan Himpunan Sistem Informasi Universitas Multimedia Nusantara (HIMSI-UMN) dengan tujuan utama meningkatkan solidaritas dan keakraban seluruh Keluarga Besar Mahasiswa/i Sistem Informasi (KBM SI) yang terdiri atas dosen, alumni, serta mahasiswa/i aktif sistem informasi Universitas Multimedia Nusantara. DISCO pertama kali diselenggarakan pada tahun 2010 oleh HIMSI-UMN generasi pertama yang dahulu dikenal sebagai D’Information System Community. Program kerja ini dilanjutkan secara turun temurun oleh setiap generasi, menjadikan DISCO sebagai salah satu program kerja terlama yang telah diselenggarakan oleh HIMSI-UMN selama 11 tahun.",
+      desc: "D’Information System Community Outbound (DISCO) is an annual program organized by the Information Systems Student Association of Universitas Multimedia Nusantara (HIMSI-UMN) with the primary goal of enhancing solidarity and camaraderie among the entire Information Systems family, which includes faculty, alumni, and active students. DISCO was first held in 2010 by the first generation of HIMSI-UMN, previously known as D’Information System Community. This program has been passed down through generations, making DISCO one of the longest-running programs organized by HIMSI-UMN for over 11 years.",
       isFlipped: false,
     },
     {
@@ -35,7 +35,7 @@ export default function MainEvents() {
       eventName: "Social Is Me",
       url: "/img/compile-sim.png",
       logo: "/img/logo-sim.png",
-      desc: "Social Is Me (SIM) merupakan program kerja HIMSI UMN yang bergerak dalam pengabdian kepada masyarakat. SIM berisikan kegiatan aksi sosial dengan tujuan membantu masyarakat mencapai kesejahteraan dari sisi lingkungan alam ataupun sosial. Rangkaian kegiatan SIM dilakukan dengan pelaksanaan aksi langsung kepada masyarakat, baik melalui kerja nyata, maupun melalui penyuluhan sosial. Kegiatan SIM mengandalkan inisiatif dan kepedulian mahasiswa UMN dalam menciptakan lingkungan masyarakat Indonesia yang lebih sejahtera dan bersinergi.",
+      desc: "Social Is Me (SIM) is a program by HIMSI UMN focused on community service. SIM involves social action activities aimed at helping communities achieve well-being, both in terms of environmental and social aspects. The activities under SIM are carried out through direct actions with the community, including practical work and social outreach. SIM relies on the initiative and concern of UMN students to create a more prosperous and synergistic Indonesian society.",
       isFlipped: false,
     },
   ]);

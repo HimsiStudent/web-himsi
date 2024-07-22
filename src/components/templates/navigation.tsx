@@ -77,24 +77,24 @@ export default function Navigation({
         <div className={isServiceOpen ? "services active" : "services"}>
           <Link
             title="HIMFACT"
-            href={isHomePage ? "/#himfact" : "/himfact"}
-            style={getLinkStyle("himfact")}
+            href={"/#himfact"}
+            // style={getLinkStyle("himfact")}
             onClick={handleNavClick}
           >
             SIBE
           </Link>
           <Link
             title="BIMSI"
-            href={isHomePage ? "/#bimsi" : "/bimsi"}
-            style={getLinkStyle("bimsi")}
+            href={"/#bimsi"}
+            // style={getLinkStyle("bimsi")}
             onClick={handleNavClick}
           >
             BIMSI
           </Link>
           <Link
             title="Aspiration"
-            href={isHomePage ? "/#aspiration" : "/aspiration"}
-            style={getLinkStyle("aspiration")}
+            href={"/#aspiration"}
+            // style={getLinkStyle("aspiration")}
             onClick={handleNavClick}
           >
             Aspiration

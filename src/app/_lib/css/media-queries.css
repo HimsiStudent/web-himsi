@@ -477,6 +477,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .notFound-page-container h1.err {
+    font-size: 3rem;
+  }
+
   #aspiration {
     flex-direction: column;
     gap: 0px;
@@ -612,6 +616,14 @@
   }
 }
 @media screen and (max-width: 1050px) {
+  .notFound-page-container h1 {
+    font-size: 4rem;
+  }
+
+  .notFound-page-container p {
+    font-size: 1.5rem;
+  }
+
   #timeline .wrapper {
     padding-inline: 10px;
   }
@@ -846,6 +858,17 @@
 }
 
 @media screen and (max-width: 700px) {
+  .notFound-page-container h1.err {
+    font-size: 2.5rem;
+  }
+
+  .notFound-page-container p {
+    font-size: 1.2rem;
+  }
+  .notFound-page-container img {
+    width: 300px;
+    height: 300px;
+  }
   .notFound-container .wrapper {
     width: 400px;
     height: 300px;
@@ -940,6 +963,26 @@
 }
 
 @media screen and (max-width: 576px) {
+  .eventPage-container h1 {
+    font-size: 3rem;
+  }
+  .eventPage-container .event .desc-wrapper {
+    gap: 15px;
+    padding: 20px;
+  }
+  .eventPage-container .event .img-wrapper {
+    height: 40%;
+  }
+  /* .eventPage-container .event .desc-wrapper .logo-wrapper {
+    width: 70px;
+    height: 70px;
+  } */
+  .eventPage-container .event .title h2 {
+    font-size: 1.5rem;
+  }
+  .eventPage-container .event {
+    height: auto;
+  }
   /* .genStory-hero {
     height: 20vh;
   } */
@@ -1178,6 +1221,13 @@
 }
 
 @media screen and (max-width: 426px) {
+  .notFound-page-container h1.err {
+    font-size: 1.5rem;
+  }
+
+  .notFound-page-container p {
+    font-size: 1rem;
+  }
   .genStory-details-container h3 {
     font-size: 2rem;
     margin-top: 50px;
@@ -1329,6 +1379,9 @@
 }
 
 @media screen and (max-width: 376px) {
+  .eventPage-container h1 {
+    font-size: 2rem;
+  }
   .timeline h1 {
     font-size: 2.3rem;
   }
@@ -1424,6 +1477,9 @@
 }
 
 @media screen and (max-width: 321px) {
+  .eventPage-container .event .logo-wrapper {
+    display: none;
+  }
   .timeline-item .content h2 {
     font-size: 1.2rem;
   }

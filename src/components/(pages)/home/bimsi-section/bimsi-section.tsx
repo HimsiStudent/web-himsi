@@ -29,7 +29,13 @@ export default function BimsiSection() {
                 developing student&apos;s academic abilities by providing space
                 to explore and develop their potential.
               </p>
-              <button title="Join Now" className="btn-style-1">
+              <button
+                title="Join Now"
+                className="btn-style-1"
+                onClick={() => {
+                  window.open("https://linktr.ee/umn_si", "_blank");
+                }}
+              >
                 JOIN NOW
               </button>
             </div>

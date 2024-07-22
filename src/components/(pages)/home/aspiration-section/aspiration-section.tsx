@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 export default function AspirationSection() {
   return (
@@ -29,8 +31,10 @@ export default function AspirationSection() {
           <button
             className="btn-style-1"
             onClick={() => {
-              window.location.href =
-                "https://forms.office.com/Pages/ResponsePage.aspx?id=FfM3v8K6qESubC8hNR0mTHfocJHESkxIuz3QBc8bN6hUN1RKOVZHUTVSSktCNDhLV1ZBU1EzNE5TSS4u";
+              window.open(
+                "https://forms.office.com/Pages/ResponsePage.aspx?id=FfM3v8K6qESubC8hNR0mTHfocJHESkxIuz3QBc8bN6hUN1RKOVZHUTVSSktCNDhLV1ZBU1EzNE5TSS4u",
+                "_blank"
+              );
             }}
           >
             SUBMIT FORM

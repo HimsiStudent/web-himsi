@@ -19,7 +19,12 @@ export default function HimfactSection() {
           <span className="font-clr-orange">innovation</span> meets fashion
           charm!
         </p>
-        <button className="btn-style-1">
+        <button
+          className="btn-style-1"
+          onClick={() => {
+            window.open("https://instagram.com/sibe_siumn", "_blank");
+          }}
+        >
           <Link href="/himfact">View More Product</Link>
         </button>
       </div>

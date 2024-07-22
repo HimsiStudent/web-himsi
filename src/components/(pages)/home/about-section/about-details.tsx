@@ -4,6 +4,9 @@ export default function AboutDetails() {
   function handleOnClick() {
     window.location.href = "/about";
   }
+  function handleOnClickEvent() {
+    window.location.href = "/event";
+  }
   return (
     <article className="right">
       <h1 id="tagline">
@@ -21,8 +24,8 @@ export default function AboutDetails() {
         <button className="btn-style-1" onClick={handleOnClick}>
           <Link href="/about">Explore Our Journey</Link>
         </button>
-        <button onClick={handleOnClick} className="btn-style-1">
-          <Link href="/about">Check Our Events</Link>
+        <button onClick={handleOnClickEvent} className="btn-style-1">
+          <Link href="/event">Check Our Events</Link>
         </button>
       </div>
     </article>
