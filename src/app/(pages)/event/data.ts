@@ -51,7 +51,7 @@ export const eventUrl = [
   {
     id: 8,
     name: "BIMBEL HIMSI",
-    url: "/img/bimsi.webp",
+    url: "/img/event/bimsi.webp",
     logo: "/img/logo-bimsi.webp",
     desc: "BIMBEL HIMSI is a program run by the Information Systems Student Association (HIMSI) at Universitas Multimedia Nusantara (UMN) aimed at helping Information Systems students develop their academic skills and providing teaching experience for interested students. This program is conducted online via Microsoft Teams with each session lasting 60 minutes. It is designed to address the needs of students who find it challenging to understand their courses and to provide an opportunity for those interested in teaching to develop their skills. Through BIMBEL HIMSI, students can receive flexible tutoring outside regular class hours.",
   },
