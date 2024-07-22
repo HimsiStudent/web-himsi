@@ -77,18 +77,23 @@ export default function Footer() {
                   <br /> Serpong, Kabupaten Tangerang, Banten 15810
                 </a>
               </li>
-              <ul className="contact-footer">
-                <li>
-                  <LineLogo />
-                  <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=886rxfyx">
-                    @886rxfyx
-                  </a>
-                </li>
-                <li>
-                  <MailIcon />
-                  <a href="mailto:himsi@umn.ac.id">himsi@umn.ac.id</a>
-                </li>
-              </ul>
+              <div className="contact-footer">
+                <ul>
+                  <li>
+                    <LineLogo />s
+                    <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=886rxfyx">
+                      @886rxfyx
+                    </a>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <MailIcon />
+                    <a href="mailto:himsi@umn.ac.id">himsi@umn.ac.id</a>
+                  </li>
+                </ul>
+              </div>
             </ul>
           </div>
 
