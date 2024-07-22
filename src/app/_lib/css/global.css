@@ -1314,14 +1314,16 @@ header.nav.active .burgerBtn-icon {
   gap: 20px;
 }
 
-#footer .top .left .sosmed li {
+#footer .top .left .sosmed li,
+.contact-footer span {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-#footer .top .mid ul li {
+#footer .top .mid ul li,
+.contact-footer span {
   display: flex;
   align-items: center;
   gap: 10px;
