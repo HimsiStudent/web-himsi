@@ -61,8 +61,9 @@ export default function WhoAreWe() {
         </p>
 
         <Image
+          priority
           alt="Logo Description"
-          src={"/img/logo-details.png"}
+          src={"/img/logo-details.webp"}
           width={1920}
           height={1920}
         />

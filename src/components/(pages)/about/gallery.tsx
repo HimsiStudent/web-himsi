@@ -9,7 +9,7 @@ export default function PhotoGallery() {
             <Image
               priority
               alt=""
-              src="/img/gallery/upper.png"
+              src="/img/gallery/upper-min.png"
               width={7290}
               height={1110}
             />
@@ -20,7 +20,7 @@ export default function PhotoGallery() {
             <Image
               priority
               alt=""
-              src="/img/gallery/lower.png"
+              src="/img/gallery/lower-min.png"
               width={7290}
               height={1110}
             />

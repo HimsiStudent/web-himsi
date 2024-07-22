@@ -10,7 +10,13 @@ export default function EventsContainer() {
           {eventUrl.map((event, index) => (
             <div key={index} className="event">
               <div className="img-wrapper">
-                <Image alt="" src={event.url} width={1920} height={1080} />
+                <Image
+                  priority
+                  alt=""
+                  src={event.url}
+                  width={1920}
+                  height={1080}
+                />
               </div>
               <div className="desc-wrapper">
                 <div className="title">
@@ -18,6 +24,7 @@ export default function EventsContainer() {
                   <div className="logo-wrapper">
                     {event.logo !== "" && (
                       <Image
+                        priority
                         alt="Logo"
                         src={event.logo}
                         width={1000}
@@ -27,7 +34,6 @@ export default function EventsContainer() {
                   </div>
                 </div>
                 <p className="desc">{event.desc}</p>
-                {/* <button className="btn-style-1">SEE MORE DETAILS</button> */}
               </div>
             </div>
           ))}

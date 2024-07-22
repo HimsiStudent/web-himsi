@@ -77,7 +77,13 @@ export default function HeroSectionAbout({
                 : ""
             }`}
           >
-            <Image alt={gen.name} src={gen.pict} width={1980} height={1980} />
+            <Image
+              priority
+              alt={gen.name}
+              src={gen.pict}
+              width={1980}
+              height={1980}
+            />
             <div
               className="desc-wrapper"
               onMouseEnter={handleMouseEnter}

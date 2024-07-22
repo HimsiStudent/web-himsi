@@ -337,6 +337,8 @@
 
   .event-container {
     justify-content: flex-start;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 
@@ -530,6 +532,8 @@
 
   .event-wrapper .carousel-ctrl {
     display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     gap: 30px;
     position: absolute;
@@ -818,6 +822,7 @@
     -webkit-animation: fadeInRight 1s forwards;
   }
   .timeline-item.fade-out-left {
+    -webkit-animation: fadeOutRight 1s forwards;
     animation: fadeOutRight 1s forwards;
   }
   .timeline .timeline-item {
@@ -826,7 +831,9 @@
   }
   #timeline .wrapper {
     align-items: flex-end;
+    -webkit-padding-end: 50px;
     padding-inline-end: 50px;
+    -webkit-padding-start: 0px;
     padding-inline-start: 0px;
   }
   .whoAreWe p {
@@ -1026,6 +1033,7 @@
   }
   #timeline .wrapper {
     gap: 30px;
+    -webkit-padding-end: 20px;
     padding-inline-end: 20px;
   }
   .timeline .dot-wrapper {

@@ -19,7 +19,7 @@ export default function ProductDisplay() {
     {
       id: 2,
       productName: "jahim",
-      url: "/img/jahim_front.png",
+      url: "/img/jahim_front.webp",
       status: true,
     },
     {
