@@ -605,6 +605,10 @@ header.nav.active .burgerBtn-icon {
   /* cursor: none; */
 }
 
+#himfact {
+  flex-wrap: wrap-reverse;
+}
+
 #himfact .right {
   display: flex;
   justify-content: flex-end;
