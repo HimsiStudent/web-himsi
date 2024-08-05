@@ -295,6 +295,12 @@
   }
 }
 
+@media screen and (min-width: 1056px) {
+  #himfact {
+    flex-wrap: wrap-reverse;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .genStory-hero {
     height: 50vh;
