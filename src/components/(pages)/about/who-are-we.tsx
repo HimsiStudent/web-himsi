@@ -12,11 +12,11 @@ export default function WhoAreWe() {
           <b>
             <i>
               &quot;<span className="font-clr-blue">Himpunan Mahasiswa</span>{" "}
-              <span className="font-clr-orange">Sistem Informasi</span> &quot;
+              <span className="font-clr-orange">Sistem Informasi</span>&quot;
             </i>
           </b>{" "}
           commonly abbreviated as <b>HIMSI</b>, is an Association of Information
-          Systems Students at Universitas Multimeida Nusantara (UMN).
+          Systems Students at Universitas Multimedia Nusantara (UMN).
           Established with the mission to provide a comprehensive platform for{" "}
           <b>
             <i>
