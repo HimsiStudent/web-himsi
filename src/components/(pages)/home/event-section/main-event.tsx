@@ -16,10 +16,10 @@ export default function MainEvents() {
     },
     {
       id: 1,
-      eventName: "prastavana",
+      eventName: "SANDHYAKALA",
       url: "/img/compile-perprod.webp",
       logo: "/img/logo-perprod.webp",
-      desc: 'PRASTAVANA 2024, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students with the theme "Transformation Towards The Future" and the tagline "Ignite Creativity, Create Innovation." This theme encourages new students to approach their academic challenges with enthusiasm and an open mindset, recognize their potential, and design their academic journey according to their goals. The tagline inspires them to enhance creativity and innovation, think beyond boundaries, create new solutions, and become change-makers in an academic environment that fosters experimentation and collaboration.',
+      desc: 'SANDHYAKALA 2025, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students with the theme "Transformation Towards The Future" and the tagline "Ignite Creativity, Create Innovation." This theme encourages new students to approach their academic challenges with enthusiasm and an open mindset, recognize their potential, and design their academic journey according to their goals. The tagline inspires them to enhance creativity and innovation, think beyond boundaries, create new solutions, and become change-makers in an academic environment that fosters experimentation and collaboration.',
       isFlipped: false,
     },
     {
