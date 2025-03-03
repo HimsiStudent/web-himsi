@@ -10,8 +10,8 @@ export default function AboutDetails() {
   return (
     <article className="right">
       <h1 id="tagline">
-        <span className="font-clr-blue">#InHarmonia</span>
-        <span className="font-clr-orange">AdMeliora</span>
+        <span className="font-clr-blue">#UnitedInHarmony</span>
+        <span className="font-clr-orange">ForeverAFamily</span>
       </h1>
       <p>
         We are dedicated to creating unforgettable experiences with both{" "}

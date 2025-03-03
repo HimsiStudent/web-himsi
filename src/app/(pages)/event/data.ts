@@ -17,7 +17,7 @@ export const eventUrl = [
     id: 3,
     name: "DISCO",
     url: "/img/event/disco.webp",
-    logo: "/img/logo-disco.webp",
+    logo: "/img/logo-disco11.webp",
     desc: "D’Information System Community Outbound (DISCO) is an annual program organized by the Information Systems Student Association of Universitas Multimedia Nusantara (HIMSI-UMN) with the primary goal of enhancing solidarity and camaraderie among the entire Information Systems family, which includes faculty, alumni, and active students. DISCO was first held in 2010 by the first generation of HIMSI-UMN, previously known as D’Information System Community. This program has been passed down through generations, making DISCO one of the longest-running programs organized by HIMSI-UMN for over 11 years.",
   },
   {
