@@ -34,7 +34,7 @@ export default function MainEvents() {
       id: 3,
       eventName: "Social Is Me",
       url: "/img/compile-sim.webp",
-      logo: "/img/logo-sim.webp",
+      logo: "/img/logo-sim-2024.webp",
       desc: "Social Is Me (SIM) is a program by HIMSI UMN focused on community service. SIM involves social action activities aimed at helping communities achieve well-being, both in terms of environmental and social aspects. The activities under SIM are carried out through direct actions with the community, including practical work and social outreach. SIM relies on the initiative and concern of UMN students to create a more prosperous and synergistic Indonesian society.",
       isFlipped: false,
     },
