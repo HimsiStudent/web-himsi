@@ -27,13 +27,13 @@ export const eventUrl = [
     logo: "/img/logo-sim.webp",
     desc: "Social Is Me (SIM) is a program by HIMSI UMN focused on community service. SIM involves social action activities aimed at helping communities achieve well-being, both in terms of environmental and social aspects. The activities under SIM are carried out through direct actions with the community, including practical work and social outreach. SIM relies on the initiative and concern of UMN students to create a more prosperous and synergistic Indonesian society.",
   },
-  {
-    id: 5,
-    name: "FUNSPORT",
-    url: "/img/event/funsport.webp",
-    logo: "/img/logo-funsport.webp",
-    desc: "FunSport is a competition for Information Systems students that takes place in both sports and e-sports events. This initiative aims to foster a competitive spirit and improve competitiveness among SI students in non-academic areas. Additionally, FunSport serves as a platform to enhance relationships and build connections among KBM SI members beyond their academic activities. By engaging in these competitions, students not only showcase their skills but also strengthen camaraderie and teamwork within the community.",
-  },
+  // {
+  //   id: 5,
+  //   name: "FUNSPORT",
+  //   url: "/img/event/funsport.webp",
+  //   logo: "/img/logo-funsport.webp",
+  //   desc: "FunSport is a competition for Information Systems students that takes place in both sports and e-sports events. This initiative aims to foster a competitive spirit and improve competitiveness among SI students in non-academic areas. Additionally, FunSport serves as a platform to enhance relationships and build connections among KBM SI members beyond their academic activities. By engaging in these competitions, students not only showcase their skills but also strengthen camaraderie and teamwork within the community.",
+  // },
   {
     id: 6,
     name: "SIBE",

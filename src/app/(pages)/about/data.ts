@@ -167,8 +167,8 @@ export const gens = [
     pict: "/img/gen15.webp",
     tagline: "United In Harmony, Forever A Family",
     year: 2025,
-    desc: "Gen XV consists of Samuel Tjen as the President, Yohanes Kenny Putra Sudiono as the Vice President, Muhammad Kynan Khalfani who serves as both Secretary and Treasurer. Muhammad Arsyan Rahmani is the Academic Coordinator, alongside Rayhandi Zulmi handling academic affairs. Chandra Galih Endratmo oversees non-academic matters as the Non-Academic Coordinator. Christopher Kenneth David takes charge of Student Relations and Welfare as the Coordinator, while Samuel Rai Indrawan also contributes to student welfare and relations.",
-    legacy: "After many obstacles, we finally made a big change. ISFEST 2025 road to International.",
+    desc: "Gen XV consists of Samuel Tjen as the President, Yohanes Kenny Putra Sudiono as the Vice President, Muhammad Kynan Khalfani who serves as both Secretary and Treasurer. Muhammad Arsyan Rahmani is the Academic Coordinator, alongside Rayhandi Zulmi handling academic affairs. Chandra Galih Endratmo oversees non-academic matters as the Non-Academic Coordinator. Fariza Bunga Azzahra takes charge of Student Relations and Welfare as the Coordinator, while Abimanyu also contributes to student welfare and relations.",
+    legacy: "Comming soon",
     shortLegacy: "Big Change",
   },
 ];
