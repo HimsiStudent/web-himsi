@@ -168,7 +168,7 @@ export const gens = [
     tagline: "United In Harmony, Forever A Family",
     year: 2025,
     desc: "Gen XV consists of Samuel Tjen as the President, Yohanes Kenny Putra Sudiono as the Vice President, Muhammad Kynan Khalfani who serves as both Secretary and Treasurer. Muhammad Arsyan Rahmani is the Academic Coordinator, alongside Rayhandi Zulmi handling academic affairs. Chandra Galih Endratmo oversees non-academic matters as the Non-Academic Coordinator. Fariza Bunga Azzahra takes charge of Student Relations and Welfare as the Coordinator, while Abimanyu also contributes to student welfare and relations.",
-    legacy: "Comming soon",
+    legacy: "Coming soon",
     shortLegacy: "Big Change",
   },
 ];
