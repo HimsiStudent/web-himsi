@@ -40,7 +40,7 @@ export default function Footer() {
               </li>
               <li>|</li>
               <li>
-                <a href="/himfact">HIMFACT</a>
+                <a href="/SIBE">SIBE</a>
               </li>
               <li>|</li>
               <li>
@@ -116,7 +116,7 @@ export default function Footer() {
               />
             </div>
             <p>
-              Designed & Developed by <strong>HIMSI GEN XIV</strong>
+              Designed & Developed by <strong>HIMSI GEN XV</strong>
             </p>
           </div>
         </div>
