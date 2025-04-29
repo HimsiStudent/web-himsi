@@ -11,7 +11,7 @@ export const eventUrl = [
     name: "SANDHYAKALA",
     url: "/img/event/perprod.webp",
     logo: "/img/logo-perprod-2025.webp",
-    desc: 'SANDHYAKALA 2025, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students with the theme "Transformation Towards The Future" and the tagline "Ignite Creativity, Create Innovation." This theme encourages new students to approach their academic challenges with enthusiasm and an open mindset, recognize their potential, and design their academic journey according to their goals. The tagline inspires them to enhance creativity and innovation, think beyond boundaries, create new solutions, and become change-makers in an academic environment that fosters experimentation and collaboration.',
+    desc: 'SANDHYAKALA 2025, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students under the theme "Embarking the Cycle – A New Dawn of Transformation" and the tagline "Menggali Potensi, Menjadi Inspirasi." This theme invites students to begin a transformative academic journey with renewed spirit, embracing growth, change, and continuous learning as essential parts of their development. SANDHYAKALA encourages new students to explore their potential, cultivate their talents, and become proactive learners. It aspires not only to support their growth within the academic environment but also to inspire them to apply their knowledge, creativity, and leadership to make a meaningful impact beyond the campus.',
   },
   {
     id: 3,
