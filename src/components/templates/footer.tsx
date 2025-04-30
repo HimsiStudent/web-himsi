@@ -6,6 +6,7 @@ import MailIcon from "../(assets)/mail-icon";
 import LocationIcon from "../(assets)/location-icon";
 import InstaLogo from "../(assets)/insta-logo";
 import FacebookLogo from "../(assets)/facebook-logo";
+import TikTokLogo from "../(assets)/tiktok-logo";
 import LinkedinLogo from "../(assets)/linkedin-logo";
 
 export default function Footer() {
@@ -53,6 +54,10 @@ export default function Footer() {
             </ul>
             <h2>Follow Us</h2>
             <ul className="sosmed">
+              <li>
+                <TikTokLogo/>
+                <a href="https://www.tiktok.com/@himsiumn"> TikTok</a>
+              </li>
               <li>
                 <FacebookLogo />
                 <a href="https://www.facebook.com/himsi.umn/"> Facebook</a>
