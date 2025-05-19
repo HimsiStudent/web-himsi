@@ -4,7 +4,7 @@ export default function AboutImage() {
   return (
     <div className="left">
       <Image
-        src="/img/about_sectiong.webp"
+        src="/img/about_section.webp"
         alt=""
         width={2000}
         height={2000}
