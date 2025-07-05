@@ -158,8 +158,8 @@ export const gens = [
     tagline: "In Harmonia Ad Meliora",
     year: 2024,
     desc: "Gen XIV consists of Kenny Budiarso Lawson as the President, Nabila Az Zahra Paramita as the Vice President, and Sabrina Nurul Azmi who serves as both Secretary and Treasurer. Karin Eldora is the Academic Coordinator, alongside Nicholas Soesilo handling academic affairs. Rafi Aldino oversees non-academic matters as the Non-Academic Coordinator, supported by Bintang Muhammad Ramdhan. Christopher Kenneth David takes charge of Student Relations and Welfare as the Coordinator, while Samuel Rai Indrawan also contributes to student welfare and relations.",
-    legacy: "Legacy are currently being written",
-    shortLegacy: "Upcoming Legacy",
+    legacy: "Rebranding HIMFACT to SIBE means changing the student organization’s name and image to better match today’s students and the tech world. It’s more than just a new name, it’s a fresh start with a modern look and purpose.",
+    shortLegacy: "Rebranding HIMFACT to SIBE",
   },
   {
     id: 15,
