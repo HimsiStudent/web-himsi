@@ -2193,3 +2193,38 @@ header.nav.active .burgerBtn-icon {
 .aspirationPage-container {
   margin-top: 100px;
 }
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button.left {
+  left: 1rem;
+}
+
+.nav-button.right {
+  right: 1rem;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+}

@@ -62,9 +62,62 @@ export default function HeroSectionAbout({
     window.location.href = "/about/" + gen.name.replace(/\s+/g, "");
   }
 
+  // New: Navigation Handlers
+  const goToNext = () => {
+    setCarouselIndex((prevIndex) =>
+      prevIndex === 0 ? genLength : prevIndex - 1
+    );
+    setIsPaused(true);
+  };
+
+  const goToPrev = () => {
+    setCarouselIndex((prevIndex) =>
+      prevIndex === genLength ? 0 : prevIndex + 1
+    );
+    setIsPaused(true);
+  };
+
   return (
     <>
       <section className="heroAbout">
+        <button className="nav-button left" onClick={goToPrev} aria-label="Previous">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+    stroke="white"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="icon"
+    viewBox="0 0 24 24"
+    style={{ transform: "rotate(180deg)" }}
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+</button>
+
+<button className="nav-button right" onClick={goToNext} aria-label="Next">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+    stroke="white"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="icon"
+    viewBox="0 0 24 24"
+    
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+</button>
+
         {filteredGens.map((gen, index) => (
           <div
             key={gen.id}
