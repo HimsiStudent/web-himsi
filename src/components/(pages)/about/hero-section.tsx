@@ -80,7 +80,7 @@ export default function HeroSectionAbout({
   return (
     <>
       <section className="heroAbout">
-        <button className="nav-button left" onClick={goToPrev} aria-label="Previous">
+        <button className="nav-button left" onClick={goToNext} aria-label="Next">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -99,7 +99,7 @@ export default function HeroSectionAbout({
   </svg>
 </button>
 
-<button className="nav-button right" onClick={goToNext} aria-label="Next">
+<button className="nav-button right" onClick={goToPrev} aria-label="Next">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"

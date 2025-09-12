@@ -1383,6 +1383,8 @@
   } */
   #about .left img {
     width: 80%;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
   #himfact .left h1 {
     letter-spacing: 15px;
@@ -1615,3 +1617,5 @@
     left: 30px;
   }
 }
+
+
