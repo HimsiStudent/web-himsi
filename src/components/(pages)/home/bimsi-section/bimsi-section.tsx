@@ -27,7 +27,7 @@ export default function BimsiSection() {
                 depth, but also enriches their teaching skills. As a result,
                 this program has proven successful in becoming a forum for
                 developing student&apos;s academic abilities by providing space
-                to explore and develop their potential.
+                to explore and develop their potential
               </p>
               <button
                 title="Join Now"
