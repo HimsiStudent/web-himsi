@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="text-wrapper">
             <h1>
               <span>HIMSI</span>
-              <span>&nbsp;GEN</span> XV
+              <span>&nbsp;GEN</span> XVI
             </h1>
             <p>
               In the long book of life, every family has its own story. <br />
