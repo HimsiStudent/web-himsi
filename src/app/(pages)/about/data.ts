@@ -171,4 +171,14 @@ export const gens = [
     legacy: "After a long wait, ISFEST 2025 became one of HIMSI's first programs to reach an international level.",
     shortLegacy: "ISFEST 2025 Goes International",
   },
+  {
+    id: 16,
+    name: "Gen XVI",
+    pict: "/img/gen16.webp",
+    tagline: "Honor In Unity, Strengh In Solidarity",
+    year: 2026,
+    desc: "Gen XVI consists of Yohanes Vincentius as the President, Carla Ophelia Tioho as the Vice President, Alexa Hanna Maisha who serves as both Secretary and Treasurer. Farell Eugene is the Academic Coordinator, alongside Ferdy Nugraha Oey and Julius Marselinus handling academic affairs. Marco Jozua Fabiano oversees non-academic matters as the Non-Academic Coordinator, with Arie Evander Pratama Y. serving as a member. Samuel Tjen takes charge of Student Relations and Welfare as the Coordinator, while Valerie Kurniawan and Desy Ratnasari also contribute to student welfare and relations.",
+    legacy: "Coming Soon",
+    shortLegacy: "Coming Soon",
+  },
 ];

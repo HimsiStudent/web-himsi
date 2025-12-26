@@ -55,7 +55,7 @@ export default function Footer() {
             <h2>Follow Us</h2>
             <ul className="sosmed">
               <li>
-                <TikTokLogo/>
+                <TikTokLogo />
                 <a href="https://www.tiktok.com/@himsiumn"> TikTok</a>
               </li>
               <li>
@@ -121,7 +121,7 @@ export default function Footer() {
               />
             </div>
             <p>
-              Designed & Developed by <strong>HIMSI GEN XV</strong>
+              Designed & Developed by <strong>HIMSI GEN XVI</strong>
             </p>
           </div>
         </div>
