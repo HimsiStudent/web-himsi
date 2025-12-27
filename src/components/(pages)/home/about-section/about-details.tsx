@@ -10,15 +10,19 @@ export default function AboutDetails() {
   return (
     <article className="right">
       <h1 id="tagline">
-        <span className="font-clr-blue">#UnitedInHarmony</span>
-        <span className="font-clr-orange">ForeverAFamily</span>
+        <span className="font-clr-blue">#HonorInUnity</span>
+        <span className="font-clr-orange">StrengthInSolidarity</span>
       </h1>
       <p>
-        We are dedicated to creating unforgettable experiences with both{" "}
-        <span>Familialism</span> and <span>professionalism</span> in keeping
-        through <span className="font-clr-blue">Kompas Gramedia&apos;s 5C</span>{" "}
-        values. <br /> Our journey blends excellence, passion, and commitment,
-        leading us to remarkable achievements.
+        Building the future with integrity. We integrate honor into every action and strength
+        into every collaboration. Based on <span>#HonorInUnityStrengthInSolidarity</span>, we cultivate a
+        culture of professional excellence rooted in a strong sense of togetherness, where
+        trust, mutual respect, and responsibility guide every decision.
+        <br />
+        <br />
+        United as one, we are committed to continuous innovation and growth together,
+        ensuring that every contribution is valued, every relationship is respected, and every
+        act of solidarity yields tangible and impactful results.
       </p>
       <div className="btn-wrapper">
         <button className="btn-style-1" onClick={handleOnClick}>
