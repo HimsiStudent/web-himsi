@@ -40,7 +40,7 @@ export default function TimelineLine({ gens, timelineRef }: TimelineProps) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [gens]);
+  }, [gens, timelineRef]);
   return (
     <>
       <span className="line gray"></span>
