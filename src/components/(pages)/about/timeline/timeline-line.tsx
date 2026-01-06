@@ -17,11 +17,6 @@ interface TimelineProps {
 export default function TimelineLine({ gens, timelineRef }: TimelineProps) {
   const lineRef = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    const savedHeight = localStorage.getItem("lineHeight");
-    if (lineRef.current && savedHeight) {
-      lineRef.current.style.height = `${savedHeight}px`;
-    }
-
     const handleScroll = () => {
       if (lineRef.current && timelineRef.current) {
         const viewportHeight = window.innerHeight;
@@ -31,9 +26,11 @@ export default function TimelineLine({ gens, timelineRef }: TimelineProps) {
           scrollY - timelineRef.current.offsetTop + viewportHeight / 3;
 
         lineRef.current.style.height = `${newHeight}px`;
-        localStorage.setItem("lineHeight", `${newHeight}`);
       }
     };
+
+    // Initial calculation
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
