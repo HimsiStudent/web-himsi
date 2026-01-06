@@ -10,14 +10,14 @@ export default function BimsiSection() {
               <Image
                 src="/LOGO-BIMSI.png"
                 alt="Logo BIMSI"
-                width={1000}
-                height={1000}
+                width={560}
+                height={560}
                 priority={true}
               />
             </div>
             <div className="bimsi-text">
               <h1>BIMBEL HIMSI</h1>
-              <p>
+              <p style={{ textAlign: "justify" }}>
                 Academic Division work program that facilitates the extended of
                 Universitas Multimedia Nusantara Information System students in
                 teaching and studying outside of the lecture schedule. With the

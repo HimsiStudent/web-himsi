@@ -209,14 +209,14 @@ header.nav.active .services.active {
   color: var(--blue-himsi);
 }
 
-#services + .services a {
+#services+.services a {
   color: var(--white);
   padding: 10px 30px;
   width: 100%;
   text-align: center;
 }
 
-#services + .services a:hover {
+#services+.services a:hover {
   background-color: #00000021;
 }
 
@@ -616,6 +616,7 @@ header.nav.active .burgerBtn-icon {
   align-items: center;
   align-self: flex-end;
 }
+
 #himfact .product-wrapper {
   border: 50px solid var(--blue-himsi);
   border-right: none;
@@ -660,6 +661,7 @@ header.nav.active .burgerBtn-icon {
   -o-object-fit: contain;
   object-fit: contain;
 }
+
 #himfact .product-wrapper .img-wrapper {
   width: 120px;
   height: 120px;
@@ -847,7 +849,7 @@ header.nav.active .burgerBtn-icon {
 }
 
 .bimsi-logo-wrapper img {
-  width: 370px;
+  width: 300px;
   height: auto;
 }
 
@@ -1132,6 +1134,7 @@ header.nav.active .burgerBtn-icon {
   width: 100%;
   /* overflow: hidden; */
 }
+
 .event-card-inner .back .xSymbol {
   width: 25px;
   height: 25px;
@@ -1506,6 +1509,7 @@ header.nav.active .burgerBtn-icon {
   -ms-user-select: none;
   user-select: none;
 }
+
 .heroAbout-wrapper .desc-wrapper .right h2 {
   font-size: 3rem;
   width: 100%;
@@ -1514,6 +1518,7 @@ header.nav.active .burgerBtn-icon {
   -ms-user-select: none;
   user-select: none;
 }
+
 .heroAbout-wrapper .desc-wrapper .right .cut-desc {
   display: none;
 }
@@ -2080,6 +2085,7 @@ header.nav.active .burgerBtn-icon {
 .notFound-page-container p {
   font-size: 2rem;
 }
+
 .notFound-page-container img {
   width: 600px;
   height: 600px;
@@ -2161,6 +2167,7 @@ header.nav.active .burgerBtn-icon {
   gap: 30px;
   justify-content: space-between;
 }
+
 .eventPage-container .event .title h2 {
   color: var(--blue-himsi);
   width: 70%;
