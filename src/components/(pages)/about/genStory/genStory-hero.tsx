@@ -18,7 +18,15 @@ export default function GenStoryHero({ gen }: TimelineProps) {
   return (
     <>
       <section className="genStory-hero">
-        <Image priority alt="" src={gen.pict} width={3000} height={3000} />
+        <Image
+          priority
+          alt=""
+          src={gen.pict}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
       </section>
     </>
   );
