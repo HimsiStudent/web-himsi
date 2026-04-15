@@ -8,16 +8,16 @@ export const eventUrl = [
   },
   {
     id: 2,
-    name: "SANDHYAKALA",
+    name: "PERKENALAN PRODI",
     url: "/img/event/perprod.webp",
-    logo: "/img/logo-perprod-2025.webp",
-    desc: 'SANDHYAKALA 2025, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students under the theme "Embarking the Cycle – A New Dawn of Transformation" and the tagline "Menggali Potensi, Menjadi Inspirasi." This theme invites students to begin a transformative academic journey with renewed spirit, embracing growth, change, and continuous learning as essential parts of their development. SANDHYAKALA encourages new students to explore their potential, cultivate their talents, and become proactive learners. It aspires not only to support their growth within the academic environment but also to inspire them to apply their knowledge, creativity, and leadership to make a meaningful impact beyond the campus.',
+    logo: "/img/logo-perprod.webp",
+    desc: 'Perkenalan Prodi Sistem Informasi, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students under the theme "Embarking the Cycle – A New Dawn of Transformation" and the tagline "Menggali Potensi, Menjadi Inspirasi." This theme invites students to begin a transformative academic journey with renewed spirit, embracing growth, change, and continuous learning as essential parts of their development. SANDHYAKALA encourages new students to explore their potential, cultivate their talents, and become proactive learners. It aspires not only to support their growth within the academic environment but also to inspire them to apply their knowledge, creativity, and leadership to make a meaningful impact beyond the campus.',
   },
   {
     id: 3,
     name: "DISCO",
     url: "/img/event/disco.webp",
-    logo: "/img/logo-disco11-revisi.webp",
+    logo: "/img/logo-disco.webp",
     desc: "D’Information System Community Outbound (DISCO) is an annual program organized by the Information Systems Student Association of Universitas Multimedia Nusantara (HIMSI-UMN) with the primary goal of enhancing solidarity and camaraderie among the entire Information Systems family, which includes faculty, alumni, and active students. DISCO was first held in 2010 by the first generation of HIMSI-UMN, previously known as D’Information System Community. This program has been passed down through generations, making DISCO one of the longest-running programs organized by HIMSI-UMN for over 11 years.",
   },
   {

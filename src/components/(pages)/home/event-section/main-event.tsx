@@ -16,17 +16,17 @@ export default function MainEvents() {
     },
     {
       id: 1,
-      eventName: "SANDHYAKALA",
+      eventName: "PERKENALAN PRODI",
       url: "/img/compile-perprod.webp",
-      logo: "/img/logo-perprod-2025.webp",
-      desc: 'SANDHYAKALA 2025, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students with the theme "Embarking the Cycle – A New Dawn of Transformation" and the tagline "Menggali Potensi, Menjadi Inspirasi." This theme invites new students to embark on their transformative academic journey with renewed spirit and awareness, embracing every phase of growth and change as an essential part of their development. It emphasizes the importance of adaptability, continuous learning, and the courage to start new cycles of innovation and self-discovery. SANDHYAKALA encourages students to explore their potential, cultivate their talents, and inspire others through their journey, becoming proactive learners, future innovators, and influential change-makers in an academic environment that values collaboration and transformation. Moreover, SANDHYAKALA aspires for new students not only to grow within the academic environment but also to become inspiration for their communities and the broader society by applying their knowledge, creativity, and leadership beyond the campus.',
+      logo: "/img/logo-perprod.webp",
+      desc: 'Perkenalan Prodi Sistem Informasi, organized by the Himpunan Mahasiswa Sistem Informasi, aims to introduce the Information Systems Study Program to new students with the theme "Embarking the Cycle – A New Dawn of Transformation" and the tagline "Menggali Potensi, Menjadi Inspirasi." This theme invites new students to embark on their transformative academic journey with renewed spirit and awareness, embracing every phase of growth and change as an essential part of their development. It emphasizes the importance of adaptability, continuous learning, and the courage to start new cycles of innovation and self-discovery. SANDHYAKALA encourages students to explore their potential, cultivate their talents, and inspire others through their journey, becoming proactive learners, future innovators, and influential change-makers in an academic environment that values collaboration and transformation. Moreover, SANDHYAKALA aspires for new students not only to grow within the academic environment but also to become inspiration for their communities and the broader society by applying their knowledge, creativity, and leadership beyond the campus.',
       isFlipped: false,
     },
     {
       id: 2,
       eventName: "DISCO",
       url: "/img/compile.webp",
-      logo: "/img/logo-disco11-revisi.webp",
+      logo: "/img/logo-disco.webp",
       desc: "D’Information System Community Outbound (DISCO) is an annual program organized by the Information Systems Student Association of Universitas Multimedia Nusantara (HIMSI-UMN) with the primary goal of enhancing solidarity and camaraderie among the entire Information Systems family, which includes faculty, alumni, and active students. DISCO was first held in 2010 by the first generation of HIMSI-UMN, previously known as D’Information System Community. This program has been passed down through generations, making DISCO one of the longest-running programs organized by HIMSI-UMN for over 11 years.",
       isFlipped: false,
     },
@@ -86,13 +86,12 @@ export default function MainEvents() {
     <div className="event-wrapper">
       {events.map((event, index) => (
         <div
-          className={`event-card ${
-            index === carouselIndex
-              ? "active"
-              : index === (carouselIndex + 1) % events.length
+          className={`event-card ${index === carouselIndex
+            ? "active"
+            : index === (carouselIndex + 1) % events.length
               ? "next"
               : ""
-          }`}
+            }`}
           key={event.id}
         >
           <div
