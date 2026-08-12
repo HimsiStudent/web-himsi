@@ -194,9 +194,12 @@ export function Header() {
           <ul className="flex items-center gap-8 lg:gap-10">
             {navItems.map((item) => {
               const active = item.href === activeHref;
+              const isHimsi = item.label === "HIMSI" || (item.href as string) === "/";
+              const LinkComponent = isHimsi ? "a" : Link;
+              
               return (
                 <li key={item.href} className="relative">
-                  <Link
+                  <LinkComponent
                     href={item.href}
                     aria-current={active ? "page" : undefined}
                     className={cn(
@@ -212,7 +215,7 @@ export function Header() {
                       aria-hidden
                       className="pointer-events-none absolute inset-x-0 -bottom-1 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent opacity-0 transition-opacity duration-[var(--motion-fast)] group-hover:opacity-100"
                     />
-                  </Link>
+                  </LinkComponent>
 
                   {/* One shared ornament that slides between links rather than
                       fading out here and in again there. Same hairline the
@@ -291,6 +294,9 @@ export function Header() {
             <ul className="flex flex-col px-[var(--spacing-site-x)] py-3">
               {navItems.map((item, i) => {
                 const active = item.href === activeHref;
+                const isHimsi = item.label === "HIMSI" || (item.href as string) === "/";
+                const LinkComponent = isHimsi ? "a" : Link;
+                
                 return (
                   <li key={item.href}>
                     <motion.div
@@ -302,7 +308,7 @@ export function Header() {
                           : { duration: 0.4, ease: sacredEase, delay: 0.06 + i * 0.05 }
                       }
                     >
-                      <Link
+                      <LinkComponent
                         href={item.href}
                         onClick={() => setOpen(false)}
                         aria-current={active ? "page" : undefined}
@@ -321,7 +327,7 @@ export function Header() {
                           )}
                         />
                         {item.label}
-                      </Link>
+                      </LinkComponent>
                     </motion.div>
                   </li>
                 );

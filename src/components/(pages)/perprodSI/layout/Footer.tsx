@@ -129,16 +129,21 @@ export function Footer() {
               Jelajahi
             </h3>
             <ul className="mt-5 flex flex-col gap-3">
-              {exploreLinks.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-linen/75 transition-colors duration-[var(--motion-fast)] ease-[var(--ease-sacred)] hover:text-linen"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {exploreLinks.map((item) => {
+                const isHimsi = item.label === "HIMSI" || item.href === "/";
+                const LinkComponent = isHimsi ? "a" : Link;
+                
+                return (
+                  <li key={item.href}>
+                    <LinkComponent
+                      href={item.href}
+                      className="text-sm text-linen/75 transition-colors duration-[var(--motion-fast)] ease-[var(--ease-sacred)] hover:text-linen"
+                    >
+                      {item.label}
+                    </LinkComponent>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
