@@ -12,8 +12,11 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   scroll-behavior: smooth;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
