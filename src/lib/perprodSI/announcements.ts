@@ -45,11 +45,11 @@ export const announcements: AnnouncementItem[] = [
     details: [
       {
         label: "Atasan Berkerah",
-        value: "Mempersiapkan kaos berkerah berwarna putih dan orange",
+        value: "Mempersiapkan kaos berkerah berwarna orange",
       },
       {
-        label: "Jeans & Hijab",
-        value: "Menggunakan jeans berwarna hitam. Khusus bagi yang berhijab, memakai hijab berwarna hitam",
+        label: "celana & Hijab",
+        value: "Menggunakan celana berwarna hitam. Khusus bagi yang berhijab, memakai hijab berwarna hitam",
       },
       {
         label: "Bando & Ikat Rambut",
