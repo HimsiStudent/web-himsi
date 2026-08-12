@@ -99,6 +99,13 @@ export default function Navigation({
           >
             Aspiration
           </Link>
+          <a
+            title="Perkenalan Prodi"
+            href={"/perkenalan-prodi"}
+            onClick={handleNavClick}
+          >
+            Perkenalan Prodi
+          </a>
         </div>
       </nav>
     </>

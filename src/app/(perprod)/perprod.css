@@ -1,0 +1,131 @@
+/*
+ * Perprod Navajivana 2026 — Scoped CSS
+ * These variables & keyframes apply only within the perprod layout.
+ */
+
+:root {
+  --color-cream: #fffbf4;
+  --color-ivory: #f8f1e7;
+  --color-gold: #d7b97a;
+  --color-earth: #8b6d53;
+  --color-earth-deep: #6e573f;
+  --color-sky: #a9c9e8;
+  --color-navy: #24374a;
+
+  --color-brown-deep: #370b03;
+  --color-maroon: #57322a;
+  --color-umber: #59453f;
+  --color-clay: #97694f;
+  --color-terracotta: #aa7971;
+  --color-rose: #c6978f;
+  --color-rose-pale: #ceb0a3;
+  --color-blush: #efbbbd;
+  --color-coral: #fd8483;
+  --color-brick: #c55145;
+  --color-periwinkle-pale: #bdcef2;
+  --color-periwinkle: #afc5f0;
+  --color-peach: #ffb39e;
+  --color-teal-pale: #c0d7df;
+  --color-teal: #55a2b2;
+  --color-teal-light: #8ebac9;
+  --color-honey-pale: #f9e3ad;
+  --color-honey: #dfbf4c;
+  --color-linen: #fef8ea;
+  --color-amber-light: #fada9e;
+  --color-amber: #f1c751;
+  --color-amber-deep: #b78b10;
+
+  --color-ivory-warm: #f8f6f2;
+  --color-ink: #183153;
+  --color-ink-muted: #3e4755;
+  --color-hairline: #e6e1d8;
+  --color-hairline-strong: #d5cfc2;
+  --color-brass: #c7a46a;
+  --color-brass-ink: #7e6435;
+
+  --background: var(--color-cream);
+  --foreground: var(--color-navy);
+  --surface: var(--color-ivory);
+  --accent: var(--color-gold);
+  --muted: var(--color-earth);
+
+  --font-heading: var(--font-cinzel), "Cormorant Garamond", Georgia, serif;
+  --font-display: var(--font-lora), "Cormorant Garamond", Georgia, serif;
+  --font-body: var(--font-jakarta), "Plus Jakarta Sans", Inter, ui-sans-serif,
+    system-ui, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  --motion-fast: 600ms;
+  --motion-base: 900ms;
+  --motion-slow: 1200ms;
+  --motion-ui: 200ms;
+  --ease-sacred: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-reveal {
+  from {
+    opacity: 0;
+    filter: blur(0.5rem);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes cloud-float {
+  from {
+    transform: translate3d(-0.5rem, 0.35rem, 0);
+  }
+  to {
+    transform: translate3d(0.75rem, -0.35rem, 0);
+  }
+}
+
+.paper-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23p)'/%3E%3C/svg%3E");
+}
+
+.perprod-scope ::selection {
+  background: color-mix(in srgb, var(--color-gold) 45%, transparent);
+  color: var(--color-navy);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .perprod-scope *,
+  .perprod-scope *::before,
+  .perprod-scope *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}

@@ -1,8 +1,3 @@
-import "./_lib/css/global.css";
-import "./_lib/css/animation.css";
-import "./_lib/css/media-queries.css";
-import NavigationHeader from "@/components/templates/header";
-import Footer from "@/components/templates/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
@@ -30,10 +25,8 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/logo-ico.ico" type="image/x-icon" />
       </head>
       <body>
-        <NavigationHeader />
         {children}
         <SpeedInsights />
-        <Footer />
       </body>
     </html>
   );

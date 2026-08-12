@@ -799,8 +799,8 @@
   }
 
   header.nav.active .services.active {
-    height: 120px;
-    bottom: -120px;
+    height: 160px;
+    bottom: -160px;
     opacity: 1;
   }
 

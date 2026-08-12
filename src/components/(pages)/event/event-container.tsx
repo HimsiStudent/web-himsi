@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { eventUrl } from "@/app/(pages)/event/data";
+import { eventUrl } from "@/app/(main)/(pages)/event/data";
 
 export default function EventsContainer() {
   return (

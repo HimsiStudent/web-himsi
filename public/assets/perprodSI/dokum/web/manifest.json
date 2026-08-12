@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "kedatangan-01",
+    "width": 1000,
+    "height": 667,
+    "bytes": 37684
+  },
+  {
+    "slug": "kedatangan-02",
+    "width": 1000,
+    "height": 667,
+    "bytes": 58908
+  },
+  {
+    "slug": "sesi-01",
+    "width": 1000,
+    "height": 667,
+    "bytes": 40996
+  },
+  {
+    "slug": "sesi-02",
+    "width": 1000,
+    "height": 1500,
+    "bytes": 51144
+  },
+  {
+    "slug": "sesi-03",
+    "width": 1000,
+    "height": 667,
+    "bytes": 47050
+  },
+  {
+    "slug": "sesi-04",
+    "width": 1000,
+    "height": 667,
+    "bytes": 32660
+  },
+  {
+    "slug": "sesi-05",
+    "width": 1000,
+    "height": 667,
+    "bytes": 42772
+  },
+  {
+    "slug": "apresiasi-01",
+    "width": 1000,
+    "height": 667,
+    "bytes": 36502
+  },
+  {
+    "slug": "apresiasi-02",
+    "width": 1000,
+    "height": 667,
+    "bytes": 45130
+  },
+  {
+    "slug": "kelompok-01",
+    "width": 1000,
+    "height": 667,
+    "bytes": 52784
+  },
+  {
+    "slug": "kelompok-02",
+    "width": 1000,
+    "height": 1500,
+    "bytes": 43134
+  },
+  {
+    "slug": "kelompok-03",
+    "width": 1000,
+    "height": 667,
+    "bytes": 55548
+  },
+  {
+    "slug": "kelompok-04",
+    "width": 1000,
+    "height": 1500,
+    "bytes": 52972
+  },
+  {
+    "slug": "daring-01",
+    "width": 1000,
+    "height": 527,
+    "bytes": 50520
+  },
+  {
+    "slug": "daring-02",
+    "width": 1000,
+    "height": 526,
+    "bytes": 48492
+  },
+  {
+    "slug": "daring-03",
+    "width": 1000,
+    "height": 523,
+    "bytes": 52156
+  },
+  {
+    "slug": "daring-04",
+    "width": 1000,
+    "height": 523,
+    "bytes": 54330
+  },
+  {
+    "slug": "daring-05",
+    "width": 1000,
+    "height": 523,
+    "bytes": 49998
+  }
+]
