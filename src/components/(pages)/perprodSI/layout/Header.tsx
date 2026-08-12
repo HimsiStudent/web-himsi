@@ -21,6 +21,7 @@ import { cn } from "@/lib/perprodSI/utils";
  * is actually on screen — see useActiveSection.
  */
 const navItems = [
+  { href: "https://himsi.umn.ac.id/", label: "HIMSI", section: null },
   { href: "/perkenalan-prodi", label: "Beranda", section: null },
   { href: "/perkenalan-prodi#timeline", label: "Timeline", section: "timeline" },
   { href: "/perkenalan-prodi#divisions", label: "Divisi", section: "divisions" },

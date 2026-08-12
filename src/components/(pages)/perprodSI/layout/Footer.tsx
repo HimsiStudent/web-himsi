@@ -9,6 +9,7 @@ const exploreLinks = [
   { href: "/perkenalan-prodi#divisions", label: "Divisi" },
   { href: "/perkenalan-prodi/faq", label: "FAQ" },
   { href: "/perkenalan-prodi/rules", label: "Peraturan" },
+  { href: "https://himsi.umn.ac.id/", label: "HIMSI" },
 ];
 
 const glyph = "h-4 w-4" as const;
