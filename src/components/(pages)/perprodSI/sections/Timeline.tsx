@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { CloudLayer, type CloudConfig } from "@/components/(pages)/perprodSI/ui/CloudLayer";
 import { Container } from "@/components/(pages)/perprodSI/ui/Container";
 import { RevealOnView } from "@/components/(pages)/perprodSI/ui/RevealOnView";
@@ -7,7 +10,7 @@ import { SectionShell } from "@/components/(pages)/perprodSI/ui/SectionShell";
 import { TimelineMilestone } from "@/components/(pages)/perprodSI/ui/TimelineMilestone";
 import { TimelinePath } from "@/components/(pages)/perprodSI/ui/TimelinePath";
 import { assets } from "@/lib/perprodSI/assets";
-import { computedMilestones } from "@/lib/perprodSI/timeline";
+import { milestones, computeStatus } from "@/lib/perprodSI/timeline";
 
 /** Faint clouds drifting over the path — reflective, never loud. */
 const clouds: CloudConfig[] = [
@@ -43,6 +46,13 @@ function PathTip({ position }: { position: "start" | "end" }) {
 }
 
 export function Timeline() {
+  const [computedMilestones, setComputedMilestones] = useState(milestones);
+
+  useEffect(() => {
+    // Computes status on mount, so it reflects the correct client-side date
+    setComputedMilestones(computeStatus(milestones));
+  }, []);
+
   return (
     <SectionShell id="timeline" className="overflow-hidden bg-cream">
       {/* The centre wayang keeps watch over the path — "Penjaga: saksi dan
