@@ -884,26 +884,72 @@
     flex-direction: column;
   }
 
-  #about .btn-wrapper {
-    flex-direction: row;
+  #about {
+    padding: 50px 24px 0 24px;
+    gap: 30px;
+  }
+
+  #about .left,
+  #about .right {
+    width: 100%;
+    flex: none;
+  }
+
+  #about .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #about .left img {
-    width: 70%;
+    width: 75%;
+    max-width: 480px;
+    height: auto;
   }
 
-  #about {
-    padding-top: 50px;
+  #about .right {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #tagline {
+    text-align: center;
+    margin-bottom: 16px;
   }
 
   #tagline,
   #tagline span {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 
   #about .right p {
     text-align: center;
+    font-size: 1.05rem;
+    line-height: 26px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  #about .btn-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 520px;
+    margin: 24px auto 0 auto;
+    gap: 16px;
+  }
+
+  #about .btn-wrapper button {
+    flex: 1;
+    padding: 14px 20px;
+    margin-top: 0;
+  }
+
+  #about .btn-wrapper button a {
+    font-size: 1rem;
   }
 
   .creation-container {
@@ -1121,20 +1167,52 @@
 
 @media screen and (max-width: 600px) {
 
+  #about {
+    padding: 40px 16px 0 16px;
+    gap: 20px;
+  }
+
+  #about .left img {
+    width: 85%;
+    max-width: 380px;
+  }
+
+  #about .right {
+    padding: 0;
+  }
+
+  #tagline {
+    margin-bottom: 12px;
+  }
+
   #tagline,
   #tagline span {
-    font-size: 2rem;
+    font-size: 1.65rem;
     text-align: center;
   }
 
-  #about .right p,
-  #about .btn-wrapper button a {
+  #about .right p {
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.925rem;
+    line-height: 22px;
   }
 
   #about .btn-wrapper {
     flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    gap: 12px;
+    margin: 18px auto 0 auto;
+  }
+
+  #about .btn-wrapper button {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  #about .btn-wrapper button a {
+    text-align: center;
+    font-size: 0.9rem;
   }
 }
 
@@ -1365,7 +1443,7 @@
 
   #tagline,
   #tagline span {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     text-align: center;
   }
 
@@ -1383,14 +1461,16 @@
 
   #about .btn-wrapper {
     align-items: center;
+    max-width: 320px;
+    margin-inline: auto;
   }
 
   #about .btn-wrapper button {
-    width: 90%;
+    width: 100%;
   }
 
   #about {
-    gap: 0;
+    gap: 15px;
   }
 
   #himfact .left {
@@ -1566,8 +1646,8 @@
   }
 
   #about {
-    padding: 0px;
-    padding-top: 50px;
+    padding: 30px 12px 0 12px;
+    gap: 15px;
   }
 
   header.nav {
@@ -1619,7 +1699,8 @@
     background-position-x: 100px;
   } */
   #about .left img {
-    width: 80%;
+    width: 90%;
+    max-width: 320px;
     overflow-x: hidden;
     box-sizing: border-box;
   }
@@ -1700,21 +1781,27 @@
 
   #tagline,
   #tagline span {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   #about .right p {
-    font-size: 0.65rem;
-    line-height: 17px;
-  }
-
-  #about .btn-wrapper button {
-    padding: 5px;
+    font-size: 0.825rem;
+    line-height: 20px;
   }
 
   #about .btn-wrapper {
+    max-width: 290px;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 14px;
+  }
+
+  #about .btn-wrapper button {
+    padding: 10px 14px;
+  }
+
+  #about .btn-wrapper button a {
+    font-size: 0.825rem;
+    letter-spacing: 1px;
   }
 
   #himfact .product-wrapper {
@@ -1859,7 +1946,7 @@
   }
 
   #about .btn-wrapper button a {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 
   #himfact .left {

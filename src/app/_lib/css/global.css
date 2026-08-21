@@ -488,6 +488,13 @@ header.nav.active .burgerBtn-icon {
   height: 100%;
 }
 
+#tagline {
+  line-height: 1.2;
+  margin-bottom: 20px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 #tagline span {
   font-family: "Times New Roman", serif;
   font-size: 3rem;
@@ -495,6 +502,7 @@ header.nav.active .burgerBtn-icon {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  display: inline-block;
 }
 
 .btn-style-1 {
@@ -557,10 +565,14 @@ header.nav.active .burgerBtn-icon {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 #about .right p span {
   font-weight: 600;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 #about .btn-wrapper {

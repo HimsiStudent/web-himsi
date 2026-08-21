@@ -14,15 +14,13 @@ export default function AboutDetails() {
         <span className="font-clr-orange">StrengthInSolidarity</span>
       </h1>
       <p>
-        Building the future with integrity. We integrate honor into every action and strength
-        into every collaboration. Based on <span>#HonorInUnityStrengthInSolidarity</span>, we cultivate a
-        culture of professional excellence rooted in a strong sense of togetherness, where
-        trust, mutual respect, and responsibility guide every decision.
+        Building the future with integrity. We bring honor to every action and strength to every collaboration.
+        Guided by <span>#HonorInUnityStrengthInSolidarity</span>, we build a culture of excellence based on teamwork,
+        where trust, respect, and responsibility drive all our decisions.
         <br />
         <br />
-        United as one, we are committed to continuous innovation and growth together,
-        ensuring that every contribution is valued, every relationship is respected, and every
-        act of solidarity yields tangible and impactful results.
+        Driven by StrengthInSolidarity, we are committed to growing and innovating together. We make sure every contribution
+        is valued, every relationship is respected, and our teamwork delivers real, positive results.
       </p>
       <div className="btn-wrapper">
         <button className="btn-style-1" onClick={handleOnClick}>
