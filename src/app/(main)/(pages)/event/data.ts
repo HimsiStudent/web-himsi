@@ -83,7 +83,7 @@ export const eventUrl = [
     name: "COMPANY VISIT",
     url: "/img/event/comvis-2.webp",
     logo: "/img/logo-comvis.webp",
-    desc: 'Company Visit 2024, organized by HIMSI UMN, aims to introduce Information Systems students to the working environment and enhance their understanding of companies. With the theme "Discovering IT Career Pathways: Exploring Opportunities and Challenges in Digital Business," this event provides a real-world view of the job market and career opportunities, as well as direct information about the field of information technology. Students will participate in presentations, department visits, and interactions with professionals, helping them to be better prepared for their future careers.',
+    desc: 'Company Visit, organized by HIMSI UMN, aims to introduce Information Systems students to the working environment and enhance their understanding of companies. With the theme "Discovering IT Career Pathways: Exploring Opportunities and Challenges in Digital Business," this event provides a real-world view of the job market and career opportunities, as well as direct information about the field of information technology. Students will participate in presentations, department visits, and interactions with professionals, helping them to be better prepared for their future careers.',
   },
   {
     id: 10,
