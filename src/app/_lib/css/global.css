@@ -2109,35 +2109,44 @@ header.nav.active .burgerBtn-icon {
 .eventPage-container {
   width: 100%;
   margin-top: 100px;
-  background-color: #f7f8fa;
-  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.eventPage-container .event-hero-banner {
+  width: 100%;
+  background-color: var(--orange-himsi);
+  padding: 35px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .eventPage-container h1 {
   font-size: 5rem;
   text-align: center;
-  background-color: var(--orange-himsi);
   color: var(--white);
-  padding: 30px;
   font-style: italic;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   user-select: none;
+  margin: 0;
 }
 
-/* ---------- filter tabs ---------- */
+/* ---------- Filter Tabs ---------- */
 
 .eventPage-container .event-filter-bar {
   display: flex;
   justify-content: center;
-  padding: 50px 30px 0 30px;
+  padding: 40px clamp(16px, 4vw, 40px) 10px clamp(16px, 4vw, 40px);
+  width: 100%;
 }
 
 .eventPage-container .event-filter-pill {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 6px;
-  background-color: #eceef2;
+  background-color: #f1f3f7;
+  border: 1px solid #e2e6ed;
   border-radius: 999px;
   max-width: 100%;
   overflow-x: auto;
@@ -2149,100 +2158,115 @@ header.nav.active .burgerBtn-icon {
 }
 
 .eventPage-container .event-filter-tab {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
   flex-shrink: 0;
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: #3f4654;
+  color: #4b5563;
   font-family: inherit;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.2px;
-  padding: 10px 20px;
+  padding: 9px 18px;
   border-radius: 999px;
-  transition: background-color 0.25s ease, color 0.25s ease;
-  -webkit-transition: background-color 0.25s ease, color 0.25s ease;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  z-index: 1;
+}
+
+.eventPage-container .event-filter-tab .tab-label {
+  position: relative;
+  z-index: 2;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
 }
 
 .eventPage-container .event-filter-tab:hover {
-  background-color: #dfe3ea;
+  color: #111827;
 }
 
 .eventPage-container .event-filter-tab.active {
+  color: var(--white);
+}
+
+.eventPage-container .event-filter-tab .active-pill-background {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
   background-color: var(--blue-himsi);
-  color: var(--white);
-  box-shadow: 0 4px 10px rgba(38, 70, 133, 0.25);
+  box-shadow: 0 3px 10px rgba(38, 70, 133, 0.35);
+  z-index: 1;
 }
 
-.eventPage-container .event-filter-tab .count {
-  font-size: 0.7rem;
-  font-weight: 700;
-  line-height: 1;
-  padding: 4px 7px;
-  border-radius: 6px;
-  background-color: #d9dde5;
-  color: #3f4654;
-}
-
-.eventPage-container .event-filter-tab.active .count {
-  background-color: rgba(255, 255, 255, 0.25);
-  color: var(--white);
-}
-
-/* ---------- card grid ---------- */
+/* ---------- Event Cards (Fluid & Responsive with Zoom) ---------- */
 
 .eventPage-container .wrapper-event {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-  gap: clamp(24px, 2.5vw, 40px);
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 50px 30px 0 30px;
+  display: flex;
+  justify-content: center;
   align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px clamp(16px, 3.5vw, 50px) 80px clamp(16px, 3.5vw, 50px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .eventPage-container .event {
+  flex: 1 1 480px;
+  max-width: 580px;
+  min-width: min(100%, 340px);
+  min-height: 560px;
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  border-radius: 14px;
-  border: 1px solid #e4e7ec;
-  box-shadow: 0 6px 18px rgba(41, 41, 41, 0.08);
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   user-select: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  -webkit-transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .eventPage-container .event:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(41, 41, 41, 0.14);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(24, 43, 85, 0.09);
+  border-color: #cbd5e1;
 }
 
 .eventPage-container .event .img-wrapper {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  background-color: rgb(192, 192, 192);
+  aspect-ratio: 16 / 9;
+  background-color: #e5e7eb;
   overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .eventPage-container .event .img-wrapper img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  transition: transform 0.35s ease;
+  -webkit-transition: transform 0.35s ease;
+}
+
+.eventPage-container .event:hover .img-wrapper img {
+  transform: scale(1.025);
 }
 
 .eventPage-container .event .desc-wrapper {
   flex: 1;
-  padding: 28px;
+  padding: 26px 28px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  overflow: hidden;
+  gap: 16px;
 }
 
 .eventPage-container .event .title {
@@ -2254,90 +2278,234 @@ header.nav.active .burgerBtn-icon {
 
 .eventPage-container .event .title h2 {
   color: var(--blue-himsi);
-  font-size: 1.6rem;
-  letter-spacing: 1px;
+  font-size: 1.7rem;
+  letter-spacing: 1.5px;
   line-height: 1.25;
+  font-weight: 700;
+  margin: 0;
 }
 
+/* 4 Animasi Lucu Random saat Kursor Diarahkan ke Logo Event */
+
+/* 1. Goyang Ceria (Wiggle & Bounce) */
+@keyframes cuteWiggle {
+  0% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  20% {
+    transform: scale(1.15) translateY(-6px) rotate(-12deg);
+  }
+  40% {
+    transform: scale(1.18) translateY(-8px) rotate(10deg);
+  }
+  60% {
+    transform: scale(1.12) translateY(-4px) rotate(-6deg);
+  }
+  80% {
+    transform: scale(1.08) translateY(-2px) rotate(3deg);
+  }
+  100% {
+    transform: scale(1.06) translateY(-2px) rotate(0deg);
+  }
+}
+
+/* 2. Membal Kenyal / Puding (Jelly Squish & Stretch) */
+@keyframes cuteJelly {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.24, 0.76);
+  }
+  45% {
+    transform: scale(0.82, 1.22);
+  }
+  65% {
+    transform: scale(1.14, 0.9);
+  }
+  85% {
+    transform: scale(0.96, 1.05);
+  }
+  100% {
+    transform: scale(1.06, 1.06);
+  }
+}
+
+/* 3. Anggukan Gemas / Sapaan Ceria (Tilt Nod - No Spin) */
+@keyframes cuteNod {
+  0% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.12) translateY(-4px) rotate(-7deg);
+  }
+  50% {
+    transform: scale(1.14) translateY(-5px) rotate(6deg);
+  }
+  75% {
+    transform: scale(1.08) translateY(-2px) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1.06) translateY(-2px) rotate(0deg);
+  }
+}
+
+/* 4. Denyut Senang / Deg-degan (Heartbeat Pulse) */
+@keyframes cuteHeartbeat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  35% {
+    transform: scale(0.98);
+  }
+  55% {
+    transform: scale(1.16);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1.06);
+  }
+}
+
+/* Logo hover animation & interactive pointer */
 .eventPage-container .event .desc-wrapper .logo-wrapper {
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
 }
 
-.eventPage-container .event .desc-wrapper .logo-wrapper img {
+.eventPage-container .event .desc-wrapper .logo-wrapper img.event-logo-interactive {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  transform-origin: center bottom;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  -webkit-transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+/* Penerapan 4 Class Animasi Lucu dengan Warna Light Biru & Abu-abu (No Oren) */
+.eventPage-container .event .desc-wrapper .logo-wrapper img.event-logo-interactive.cute-anim-wiggle {
+  animation: cuteWiggle 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  filter: drop-shadow(0 6px 14px rgba(56, 189, 248, 0.35)); /* Light Sky Blue */
+}
+
+.eventPage-container .event .desc-wrapper .logo-wrapper img.event-logo-interactive.cute-anim-jelly {
+  animation: cuteJelly 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  filter: drop-shadow(0 6px 14px rgba(100, 116, 139, 0.28)); /* Soft Gray / Abu-abu */
+}
+
+.eventPage-container .event .desc-wrapper .logo-wrapper img.event-logo-interactive.cute-anim-nod {
+  animation: cuteNod 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  filter: drop-shadow(0 6px 14px rgba(96, 165, 250, 0.35)); /* Light Blue */
+}
+
+.eventPage-container .event .desc-wrapper .logo-wrapper img.event-logo-interactive.cute-anim-heartbeat {
+  animation: cuteHeartbeat 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  filter: drop-shadow(0 6px 14px rgba(148, 163, 184, 0.32)); /* Light Slate Gray */
+}
+
+/* Fallback hover jika belum ada class */
+.eventPage-container .event .desc-wrapper .logo-wrapper:hover img.event-logo-interactive:not([class*="cute-anim-"]) {
+  transform: scale(1.06);
+  filter: drop-shadow(0 4px 12px rgba(56, 189, 248, 0.25));
+}
+
+.eventPage-container .event .desc-wrapper .logo-wrapper:active img.event-logo-interactive {
+  animation: none !important;
+  transform: scale(0.9) translateY(2px) !important;
+  filter: none !important;
+  transition: transform 0.1s ease;
 }
 
 .eventPage-container .event .desc-wrapper .desc {
-  color: #5b6170;
+  color: #4b5563;
   font-size: 0.95rem;
   line-height: 1.65;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: justify;
+  margin: 0;
 }
 
 .eventPage-container .event .desc-wrapper .read-more {
   margin-top: auto;
   align-self: flex-start;
-  background-color: transparent;
+  background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 6px 0;
   color: var(--orange-himsi);
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.3px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  transition: gap 0.25s ease, color 0.25s ease;
-  -webkit-transition: gap 0.25s ease, color 0.25s ease;
+  gap: 7px;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+}
+
+.eventPage-container .event .desc-wrapper .read-more .arrow {
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
 }
 
 .eventPage-container .event .desc-wrapper .read-more:hover {
-  color: #d0431a;
-  gap: 14px;
+  color: #c94018;
 }
 
-/* ---------- detail modal ---------- */
+.eventPage-container .event .desc-wrapper .read-more:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* ---------- Detail Modal Dialog ---------- */
 
 .event-modal-overlay {
   position: fixed;
   inset: 0;
   z-index: 10000;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  animation: fadeIn 0.25s ease;
-  -webkit-animation: fadeIn 0.25s ease;
+  padding: 24px;
 }
 
 .event-modal {
   position: relative;
   width: 100%;
-  max-width: 720px;
-  max-height: 85vh;
+  max-width: 680px;
+  max-height: 88vh;
   overflow-y: auto;
   background-color: var(--white);
-  border-radius: 14px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
 }
 
 .event-modal-close {
   position: absolute;
   top: 14px;
   right: 14px;
+  z-index: 10;
   width: 36px;
   height: 36px;
   border: none;
@@ -2350,19 +2518,20 @@ header.nav.active .burgerBtn-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.25s ease;
-  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  -webkit-transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .event-modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
+  transform: scale(1.08);
 }
 
 .event-modal-img {
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background-color: rgb(192, 192, 192);
+  background-color: #e5e7eb;
 }
 
 .event-modal-img img {
@@ -2373,10 +2542,10 @@ header.nav.active .burgerBtn-icon {
 }
 
 .event-modal-body {
-  padding: 30px;
+  padding: 28px 32px 36px 32px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
 .event-modal-body .title {
@@ -2388,94 +2557,37 @@ header.nav.active .burgerBtn-icon {
 
 .event-modal-body .title h2 {
   color: var(--blue-himsi);
-  font-size: 1.8rem;
+  font-size: 1.85rem;
   letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .event-modal-body .logo-wrapper {
   width: 80px;
   height: 80px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .event-modal-body .logo-wrapper img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
 }
 
-.event-modal-body p {
-  color: #5b6170;
+.event-modal-body .modal-desc {
+  color: #374151;
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.8;
   text-align: justify;
+  margin: 0;
 }
 
-@media screen and (max-width: 992px) {
-  .eventPage-container .wrapper-event {
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  .eventPage-container .event .desc-wrapper {
-    padding: 22px;
-    gap: 14px;
-  }
-
-  .eventPage-container .event .title h2 {
-    font-size: 1.35rem;
-  }
-
-  .eventPage-container .event .desc-wrapper .logo-wrapper {
-    width: 56px;
-    height: 56px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .eventPage-container .wrapper-event {
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
-    gap: 20px;
-  }
-
-  .eventPage-container .event-filter-bar {
-    justify-content: flex-start;
-    padding: 36px 16px 0 16px;
-  }
-
-  .eventPage-container .event-filter-pill {
-    border-radius: 16px;
-  }
-
-  .eventPage-container .wrapper-event {
-    padding: 30px 16px 0 16px;
-  }
-
-  .event-modal-body {
-    padding: 22px;
-  }
-
-  .event-modal-body .title h2 {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .eventPage-container .wrapper-event {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: 520px;
-  }
-
-  .eventPage-container .event .desc-wrapper {
-    padding: 18px;
-  }
-
-  .eventPage-container .event .title h2 {
-    font-size: 1.2rem;
-  }
-}
 
 
 .aspirationPage-container {

@@ -962,6 +962,33 @@
 }
 
 @media screen and (max-width: 768px) {
+  .eventPage-container .event-filter-bar {
+    justify-content: flex-start;
+    padding: 24px 16px 0 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .eventPage-container .event-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .eventPage-container .event-filter-pill {
+    flex-shrink: 0;
+  }
+
+  .eventPage-container .wrapper-event {
+    padding: 24px 16px 60px 16px;
+    gap: 20px;
+  }
+
+  .eventPage-container .event {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .genStory-details-container h1 q {
     font-size: 2rem;
   }
@@ -1217,8 +1244,60 @@
 }
 
 @media screen and (max-width: 576px) {
+  .eventPage-container .event-hero-banner {
+    padding: 24px 15px;
+  }
+
   .eventPage-container h1 {
     font-size: 3rem;
+  }
+
+  .eventPage-container .wrapper-event {
+    padding: 20px 14px 50px 14px;
+    gap: 20px;
+  }
+
+  .eventPage-container .event {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .eventPage-container .event .desc-wrapper {
+    padding: 20px 18px;
+    gap: 14px;
+  }
+
+  .eventPage-container .event .title h2 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .eventPage-container .event .desc-wrapper .logo-wrapper {
+    width: 65px;
+    height: 65px;
+  }
+
+  .event-modal-overlay {
+    padding: 16px;
+  }
+
+  .event-modal-body {
+    padding: 20px 18px;
+    gap: 16px;
+  }
+
+  .event-modal-body .title h2 {
+    font-size: 1.45rem;
+  }
+
+  .event-modal-body .logo-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .event-modal-body .modal-desc {
+    font-size: 0.92rem;
+    line-height: 1.65;
   }
 
   /* .genStory-hero {
@@ -1696,6 +1775,26 @@
 @media screen and (max-width: 376px) {
   .eventPage-container h1 {
     font-size: 2rem;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+  }
+
+  .eventPage-container .wrapper-event {
+    padding: 20px 12px 50px 12px;
+    gap: 20px;
+  }
+
+  .eventPage-container .event .desc-wrapper {
+    padding: 16px;
+  }
+
+  .eventPage-container .event .title h2 {
+    font-size: 1.3rem;
+  }
+
+  .eventPage-container .event .desc-wrapper .logo-wrapper {
+    width: 50px;
+    height: 50px;
   }
 
   .timeline h1 {
