@@ -122,7 +122,7 @@ export const eventUrl = [
     category: "akademik",
     name: "PKM DOSEN",
     url: "/img/event/pkm-dosen.webp",
-    logo: "",
+    logo: "/img/logo-pkm-dosen.webp",
     desc: "PKM Dosen is a HIMSI program dedicated to supporting lecturers as one of the elements of KBM SI. This program provides a platform for Information Systems lecturers to carry out Pengabdian Kepada Masyarakat (PKM), or community service, which is one of the pillars of Tri Dharma Perguruan Tinggi. Through PKM Dosen, HIMSI assists lecturers in preparing and running their community service activities, from coordinating with the target community to supporting the implementation in the field. This program not only helps lecturers fulfill their academic responsibilities, but also strengthens the collaboration between lecturers and students within KBM SI while delivering a real contribution to the wider community.",
   },
 ];
