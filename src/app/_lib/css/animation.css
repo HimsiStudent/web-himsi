@@ -213,3 +213,12 @@
     -o-transform: translateX(-1460px);
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1221,27 +1221,6 @@
     font-size: 3rem;
   }
 
-  .eventPage-container .event .desc-wrapper {
-    gap: 15px;
-    padding: 20px;
-  }
-
-  .eventPage-container .event .img-wrapper {
-    height: 40%;
-  }
-
-  /* .eventPage-container .event .desc-wrapper .logo-wrapper {
-    width: 70px;
-    height: 70px;
-  } */
-  .eventPage-container .event .title h2 {
-    font-size: 1.5rem;
-  }
-
-  .eventPage-container .event {
-    height: auto;
-  }
-
   /* .genStory-hero {
     height: 20vh;
   } */

@@ -1,6 +1,21 @@
+export type EventCategory =
+  | "akademik"
+  | "relasi"
+  | "olahraga"
+  | "karir";
+
+export const eventCategories: { id: EventCategory | "all"; label: string }[] = [
+  { id: "all", label: "Semua Acara" },
+  { id: "akademik", label: "Akademik & Tech" },
+  { id: "relasi", label: "Relasi & Keakraban" },
+  { id: "olahraga", label: "Olahraga & Komunitas" },
+  { id: "karir", label: "Karir & Pengembangan" },
+];
+
 export const eventUrl = [
   {
     id: 1,
+    category: "akademik",
     name: "ISFEST",
     url: "/img/event/isfest.webp",
     logo: "/img/logo-isfest.webp",
@@ -8,6 +23,7 @@ export const eventUrl = [
   },
   {
     id: 2,
+    category: "akademik",
     name: "PERKENALAN PRODI",
     url: "/img/event/perprod.webp",
     logo: "/img/logo-perprod.webp",
@@ -15,6 +31,7 @@ export const eventUrl = [
   },
   {
     id: 3,
+    category: "relasi",
     name: "DISCO",
     url: "/img/event/disco.webp",
     logo: "/img/logo-disco.webp",
@@ -22,6 +39,7 @@ export const eventUrl = [
   },
   {
     id: 4,
+    category: "relasi",
     name: "SOCIAL IS ME",
     url: "/img/event/sim.webp",
     logo: "/img/logo-sim.webp",
@@ -29,6 +47,7 @@ export const eventUrl = [
   },
   {
     id: 5,
+    category: "olahraga",
     name: "FUNSPORT",
     url: "/img/event/funsport.webp",
     logo: "/img/logo-funsport.webp",
@@ -36,6 +55,7 @@ export const eventUrl = [
   },
   {
     id: 6,
+    category: "karir",
     name: "SIBE",
     url: "/img/event/sibe.webp",
     logo: "/img/logo-sibe.webp",
@@ -43,6 +63,7 @@ export const eventUrl = [
   },
   {
     id: 7,
+    category: "olahraga",
     name: "SIBERIAN WEEK",
     url: "/img/event/sibe-week.webp",
     logo: "/img/logo-siberianweek.webp",
@@ -50,6 +71,7 @@ export const eventUrl = [
   },
   {
     id: 8,
+    category: "akademik",
     name: "BIMBEL HIMSI",
     url: "/img/event/bimsi.webp",
     logo: "/img/logo-bimsi.webp",
@@ -57,6 +79,7 @@ export const eventUrl = [
   },
   {
     id: 9,
+    category: "karir",
     name: "COMPANY VISIT",
     url: "/img/event/comvis-2.webp",
     logo: "/img/logo-comvis.webp",
@@ -64,6 +87,7 @@ export const eventUrl = [
   },
   {
     id: 10,
+    category: "relasi",
     name: "STUDI BANDING",
     url: "/img/event/stuban.webp",
     logo: "/img/logo-stuban.webp",
@@ -71,6 +95,7 @@ export const eventUrl = [
   },
   {
     id: 11,
+    category: "relasi",
     name: "HIMSI ANNIVERSARY",
     url: "/img/event/anniv.webp",
     logo: "/img/anniv.webp",
@@ -78,6 +103,7 @@ export const eventUrl = [
   },
   {
     id: 12,
+    category: "olahraga",
     name: "FORM ASPIRASI",
     url: "/img/event/aspirasi.webp",
     logo: "/img/aspirasi.webp",
@@ -85,6 +111,7 @@ export const eventUrl = [
   },
   {
     id: 13,
+    category: "karir",
     name: "HIMSI LEADERSHIP BOOTCAMP",
     url: "/img/event/hlb.webp",
     logo: "/img/logo-hlb.webp",
@@ -92,9 +119,10 @@ export const eventUrl = [
   },
   {
     id: 14,
+    category: "akademik",
     name: "PKM DOSEN",
     url: "/img/event/pkm-dosen.webp",
-    logo: "/img/logo-pkm-dosen.webp",
-    desc: "HIMSI LEADERSHIP BOOTCAMP is a program designed to enhance the social and leadership skills of KBM SI. The program provides intensive training in communication, decision-making, and teamwork, as well as opportunities to interact and collaborate with peers. Through various activities and real-life simulations, participants learn to face challenges and manage conflicts, developing strong and responsible leadership qualities and mindset.",
+    logo: "",
+    desc: "PKM Dosen is a HIMSI program dedicated to supporting lecturers as one of the elements of KBM SI. This program provides a platform for Information Systems lecturers to carry out Pengabdian Kepada Masyarakat (PKM), or community service, which is one of the pillars of Tri Dharma Perguruan Tinggi. Through PKM Dosen, HIMSI assists lecturers in preparing and running their community service activities, from coordinating with the target community to supporting the implementation in the field. This program not only helps lecturers fulfill their academic responsibilities, but also strengthens the collaboration between lecturers and students within KBM SI while delivering a real contribution to the wider community.",
   },
 ];
