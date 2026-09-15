@@ -1,6 +1,7 @@
 "use client";
 
 import Wave from "../../(assets)/wave";
+import HeroWall from "./hero-wall";
 
 export default function Hero() {
   function handleOnClick() {
@@ -9,6 +10,7 @@ export default function Hero() {
   return (
     <>
       <section className="hero">
+        <HeroWall />
         <div className="hero-body">
           <div className="text-wrapper">
             <h1>

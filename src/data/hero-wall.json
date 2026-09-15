@@ -1,0 +1,197 @@
+{
+  "_readme": [
+    "Konfigurasi photo-wall di belakang hero (pengganti /img/hero-compressed-hd.webp).",
+    "photos[] = kolam foto. Nama file polos dicari di folder 'asset tambahan'; path yang diawali public/ diambil dari dalam project ini.",
+    "Foto TIDAK dipotong: rasio aslinya dipertahankan supaya tidak terlihat ke-zoom.",
+    "motion = perilaku kolom melayang di browser (lebar kolom, kecepatan hanyut, pergantian foto).",
+    "motion.poolPerLoad = berapa foto yang dipakai sekali muat (dipilih acak dari kolam, sisanya masuk lewat pergantian foto).",
+    "Setelah mengubah file ini jalankan: npm run hero-wall"
+  ],
+  "sourceDir": "../asset tambahan",
+  "outputDir": "public/img/hero-wall",
+  "tile": {
+    "width": 320,
+    "quality": 62
+  },
+  "motion": {
+    "columnPx": 145,
+    "minColumnPx": 92,
+    "maxColumns": 14,
+    "gapPx": 2,
+    "driftSeconds": 90,
+    "driftJitterSeconds": 26,
+    "swapIntervalMs": 2600,
+    "fadeMs": 1400,
+    "poolPerLoad": 40
+  },
+  "photos": [
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.39 (1).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.39 (2).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.39 (3).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.39 (4).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.39.jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (1).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (10).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (11).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (12).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (13).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (14).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (2).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (3).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (4).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (5).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (6).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (7).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (8).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (9).jpeg"
+    },
+    {
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40.jpeg"
+    },
+    {
+      "source": "public/img/gen4.webp"
+    },
+    {
+      "source": "public/img/gen6.webp"
+    },
+    {
+      "source": "public/img/gen7.webp"
+    },
+    {
+      "source": "public/img/gen8.webp"
+    },
+    {
+      "source": "public/img/gen9.webp"
+    },
+    {
+      "source": "public/img/gen10.webp"
+    },
+    {
+      "source": "public/img/gen11.webp"
+    },
+    {
+      "source": "public/img/gen12.webp"
+    },
+    {
+      "source": "public/img/gen13.webp"
+    },
+    {
+      "source": "public/img/gen14.webp"
+    },
+    {
+      "source": "public/img/gen15.webp"
+    },
+    {
+      "source": "public/img/gen16.webp"
+    },
+    {
+      "source": "public/img/event/anniv.webp"
+    },
+    {
+      "source": "public/img/event/anniv(old).webp"
+    },
+    {
+      "source": "public/img/event/comvis-2.webp"
+    },
+    {
+      "source": "public/img/event/disco.webp"
+    },
+    {
+      "source": "public/img/event/funsport.webp"
+    },
+    {
+      "source": "public/img/event/hlb.webp"
+    },
+    {
+      "source": "public/img/event/isfest.webp"
+    },
+    {
+      "source": "public/img/event/pkm-dosen.webp"
+    },
+    {
+      "source": "public/img/event/sibe-week.webp"
+    },
+    {
+      "source": "public/img/event/sim.webp"
+    },
+    {
+      "source": "public/img/event/stuban.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/apresiasi-01.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/apresiasi-02.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/kedatangan-01.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/kedatangan-02.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/kelompok-01.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/kelompok-02.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/kelompok-03.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/kelompok-04.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/sesi-01.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/sesi-02.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/sesi-03.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/sesi-04.webp"
+    },
+    {
+      "source": "public/assets/perprodSI/dokum/web/sesi-05.webp"
+    }
+  ]
+}

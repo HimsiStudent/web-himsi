@@ -8,7 +8,7 @@ export default function BimsiSection() {
           <div className="bimsi-body">
             <div className="bimsi-logo-wrapper">
               <Image
-                src="/LOGO-BIMSI.png"
+                src="/LOGO-BIMSI.webp"
                 alt="Logo BIMSI"
                 width={560}
                 height={560}

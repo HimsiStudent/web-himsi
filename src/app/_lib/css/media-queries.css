@@ -2074,3 +2074,17 @@
     left: 30px;
   }
 }
+/* Kolase #about mengikuti lebar gambar lama di layar kecil */
+@media screen and (max-width: 850px) {
+  #about .left .about-collage {
+    width: 75%;
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about .left .about-collage {
+    width: 85%;
+    max-width: 380px;
+  }
+}

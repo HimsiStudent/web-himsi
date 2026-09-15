@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "collage": "node scripts/build-collage.mjs",
+    "hero-wall": "node scripts/build-hero-wall.mjs",
+    "optimize-images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.0.12",

@@ -1,0 +1,127 @@
+{
+  "_readme": [
+    "Sumber tunggal untuk kolase section #about (pengganti /img/about_section.webp).",
+    "x/y/w/h = persen dari kanvas persegi (2000x2000 pada desain aslinya).",
+    "focusX/focusY = titik fokus crop (0 = kiri/atas, 1 = kanan/bawah).",
+    "source = nama file di folder 'asset tambahan' (sejajar dengan folder web-himsi).",
+    "Setelah mengubah file ini jalankan: npm run collage"
+  ],
+  "sourceDir": "../asset tambahan",
+  "outputDir": "public/img/about-collage",
+  "renderWidth": 2000,
+  "quality": 80,
+  "decoration": {
+    "from": "public/img/about_section.webp",
+    "file": "deco.webp",
+    "width": 1400,
+    "padding": 10
+  },
+  "slots": [
+    {
+      "id": "slot-01",
+      "alt": "Pengurus HIMSI berfoto bersama di depan tugu UMN",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (12).jpeg",
+      "x": 5.5, "y": 8.5, "w": 24.5, "h": 23,
+      "focusX": 0.5, "focusY": 0.45
+    },
+    {
+      "id": "slot-02",
+      "alt": "Pelantikan organisator di auditorium",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (13).jpeg",
+      "x": 32.75, "y": 21.25, "w": 12.5, "h": 10.25,
+      "focusX": 0.5, "focusY": 0.45
+    },
+    {
+      "id": "slot-03",
+      "alt": "Kebersamaan anggota HIMSI di lobi kampus",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (6).jpeg",
+      "x": 47.5, "y": 18, "w": 17, "h": 12.5,
+      "focusX": 0.5, "focusY": 0.4
+    },
+    {
+      "id": "slot-04",
+      "alt": "Swafoto pengurus HIMSI dengan jas almamater",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.39 (3).jpeg",
+      "x": 66.5, "y": 14, "w": 23.5, "h": 27.5,
+      "focusX": 0.5, "focusY": 0.35
+    },
+    {
+      "id": "slot-05",
+      "alt": "Momen santai anggota HIMSI di dalam ruangan",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40.jpeg",
+      "x": 10, "y": 35.5, "w": 11.5, "h": 10.5,
+      "focusX": 0.5, "focusY": 0.4
+    },
+    {
+      "id": "slot-06",
+      "alt": "Foto bersama keluarga besar HIMSI di area kampus",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (2).jpeg",
+      "x": 25.5, "y": 33.5, "w": 39, "h": 29,
+      "focusX": 0.5, "focusY": 0.5
+    },
+    {
+      "id": "slot-07",
+      "alt": "Makan bersama pengurus HIMSI",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (5).jpeg",
+      "x": 10, "y": 49, "w": 11.5, "h": 11.5,
+      "focusX": 0.5, "focusY": 0.45
+    },
+    {
+      "id": "slot-08",
+      "alt": "Acara besar mahasiswa Sistem Informasi di hall kampus",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (1).jpeg",
+      "x": 68, "y": 44.5, "w": 25.5, "h": 16,
+      "focusX": 0.5, "focusY": 0.5
+    },
+    {
+      "id": "slot-09",
+      "alt": "Pengurus HIMSI berbaris rapi mengenakan jas almamater",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (9).jpeg",
+      "x": 10, "y": 65, "w": 20, "h": 11.5,
+      "focusX": 0.5, "focusY": 0.45
+    },
+    {
+      "id": "slot-10",
+      "alt": "Swafoto dua anggota HIMSI di sela acara",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (10).jpeg",
+      "x": 32, "y": 66.5, "w": 8, "h": 8.5,
+      "focusX": 0.5, "focusY": 0.4
+    },
+    {
+      "id": "slot-11",
+      "alt": "Kebersamaan HIMSI saat kegiatan malam hari",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (14).jpeg",
+      "x": 43, "y": 65, "w": 21, "h": 21.5,
+      "focusX": 0.5, "focusY": 0.4
+    },
+    {
+      "id": "slot-12",
+      "alt": "Foto bersama HIMSI seusai kegiatan olahraga malam",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (3).jpeg",
+      "x": 68, "y": 62.5, "w": 29.5, "h": 29,
+      "focusX": 0.5, "focusY": 0.45
+    },
+    {
+      "id": "slot-13",
+      "alt": "Swafoto anggota HIMSI di area terbuka kampus",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.40 (11).jpeg",
+      "x": 22, "y": 79, "w": 8, "h": 7.5,
+      "focusX": 0.5, "focusY": 0.35
+    },
+    {
+      "id": "slot-14",
+      "alt": "Dua anggota HIMSI berswafoto bersama",
+      "source": "WhatsApp Image 2026-09-12 at 08.38.39 (1).jpeg",
+      "x": 32, "y": 79, "w": 8, "h": 7.5,
+      "focusX": 0.5, "focusY": 0.35
+    }
+  ],
+  "spares": [
+    "WhatsApp Image 2026-09-12 at 08.38.39 (2).jpeg",
+    "WhatsApp Image 2026-09-12 at 08.38.39 (4).jpeg",
+    "WhatsApp Image 2026-09-12 at 08.38.39.jpeg",
+    "WhatsApp Image 2026-09-12 at 08.38.40 (4).jpeg",
+    "WhatsApp Image 2026-09-12 at 08.38.40 (7).jpeg",
+    "WhatsApp Image 2026-09-12 at 08.38.40 (8).jpeg"
+  ]
+}

@@ -44,6 +44,7 @@ body {
   --border-bottom-nav-clr: #537fd7;
   --timeline-item-color: #2f5bb3;
 
+  /* Poster hero lama; sekarang hero memakai photo-wall (lihat .hero-wall). */
   --hero-bg-image: url("/img/hero-compressed-hd.webp");
 
   --nav-header-animation: nav 1.25s ease-in-out forwards;
@@ -293,9 +294,8 @@ header.nav.active .services.active {
   left: 0;
   right: 0;
   z-index: -1;
-  background: var(--hero-bg-image) center center;
+  /* Dasar hitam; isi visualnya sekarang photo-wall (.hero-wall). */
   background-color: #000000;
-  background-size: cover;
 }
 
 .hero-body {
@@ -2627,4 +2627,140 @@ header.nav.active .burgerBtn-icon {
   width: 24px;
   height: 24px;
   stroke: white;
+}
+/* ===== Kolase section #about ===== */
+/* Susunan foto diatur di src/data/about-collage.json (persen dari kanvas 1:1). */
+
+#about .left .about-collage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#about .left .about-collage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about .left .about-collage-deco {
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+#about .left .about-collage-item {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+#about .left .about-collage-item:hover {
+  transform: scale(1.045);
+  box-shadow: 0 10px 24px rgba(38, 70, 133, 0.28);
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #about .left .about-collage-item {
+    transition: none;
+  }
+
+  #about .left .about-collage-item:hover {
+    transform: none;
+  }
+}
+
+/* ===== Photo-wall hero ===== */
+/* Kolom foto yang hanyut pelan; kolam foto & kecepatannya di src/data/hero-wall.json. */
+
+.hero-wall {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--hero-wall-cols, 5), 1fr);
+  gap: var(--hero-wall-gap, 3px);
+  background-color: #000000;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-wall-col {
+  display: flex;
+  flex-direction: column;
+  animation: heroDrift var(--hero-wall-duration, 90s) linear infinite;
+  will-change: transform;
+}
+
+.hero-wall-col.is-reverse {
+  animation-direction: reverse;
+}
+
+.hero-wall.is-paused .hero-wall-col {
+  animation-play-state: paused;
+}
+
+/* Dua salinan identik: begitu salinan pertama habis, salinan kedua sudah pas di tempatnya. */
+.hero-wall-strip {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hero-wall-gap, 3px);
+  padding-bottom: var(--hero-wall-gap, 3px);
+}
+
+.hero-wall-photo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0b0b0b;
+}
+
+.hero-wall-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.2) saturate(0.85) brightness(0.62);
+  transition: opacity var(--hero-wall-fade, 1400ms) ease-in-out;
+}
+
+/* Lapisan kedua baru dipasang saat kotak pertama kali berganti foto,
+   jadi kemunculannya dibuat memudar lewat animasi, bukan transisi. */
+.hero-wall-photo img.hero-wall-layer-in {
+  animation: heroPhotoIn var(--hero-wall-fade, 1400ms) ease-in-out;
+}
+
+@keyframes heroPhotoIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes heroDrift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-wall-col {
+    animation: none;
+  }
+
+  .hero-wall-photo img {
+    transition: none;
+  }
 }

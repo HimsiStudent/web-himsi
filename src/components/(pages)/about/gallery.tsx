@@ -9,9 +9,9 @@ export default function PhotoGallery() {
             <Image
               priority
               alt=""
-              src="/img/gallery/upper-min.png"
-              width={7290}
-              height={1110}
+              src="/img/gallery/upper-min.webp"
+              width={13390}
+              height={600}
             />
           </div>
         </div>
@@ -20,9 +20,9 @@ export default function PhotoGallery() {
             <Image
               priority
               alt=""
-              src="/img/gallery/lower-min.png"
-              width={7290}
-              height={1110}
+              src="/img/gallery/lower-min.webp"
+              width={13390}
+              height={600}
             />
           </div>
         </div>
