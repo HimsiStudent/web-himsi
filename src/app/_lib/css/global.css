@@ -10,6 +10,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
@@ -2383,6 +2389,20 @@ header.nav.active .burgerBtn-icon {
   cursor: pointer;
   border-radius: 12px;
   transition: background-color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.eventPage-container .event .desc-wrapper .logo-wrapper:focus {
+  outline: none;
+}
+
+.eventPage-container .event .desc-wrapper .logo-wrapper:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.6);
+  outline-offset: 3px;
 }
 
 .eventPage-container .event .desc-wrapper .logo-wrapper img.event-logo-interactive {
@@ -2394,6 +2414,10 @@ header.nav.active .burgerBtn-icon {
   transform-origin: center bottom;
   transition: transform 0.25s ease, filter 0.25s ease;
   -webkit-transition: transform 0.25s ease, filter 0.25s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 
 /* Penerapan 4 Class Animasi Lucu dengan Warna Light Biru & Abu-abu (No Oren) */
@@ -2417,10 +2441,12 @@ header.nav.active .burgerBtn-icon {
   filter: drop-shadow(0 6px 14px rgba(148, 163, 184, 0.32)); /* Light Slate Gray */
 }
 
-/* Fallback hover jika belum ada class */
-.eventPage-container .event .desc-wrapper .logo-wrapper:hover img.event-logo-interactive:not([class*="cute-anim-"]) {
-  transform: scale(1.06);
-  filter: drop-shadow(0 4px 12px rgba(56, 189, 248, 0.25));
+/* Fallback hover jika belum ada class (hanya aktif di perangkat mouse/desktop agar tidak sticky di HP) */
+@media (hover: hover) {
+  .eventPage-container .event .desc-wrapper .logo-wrapper:hover img.event-logo-interactive:not([class*="cute-anim-"]) {
+    transform: scale(1.06);
+    filter: drop-shadow(0 4px 12px rgba(56, 189, 248, 0.25));
+  }
 }
 
 .eventPage-container .event .desc-wrapper .logo-wrapper:active img.event-logo-interactive {
@@ -2459,6 +2485,20 @@ header.nav.active .burgerBtn-icon {
   gap: 7px;
   transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.eventPage-container .event .desc-wrapper .read-more:focus {
+  outline: none;
+}
+
+.eventPage-container .event .desc-wrapper .read-more:focus-visible {
+  outline: 2px solid var(--orange-himsi);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .eventPage-container .event .desc-wrapper .read-more .arrow {
@@ -2520,6 +2560,19 @@ header.nav.active .burgerBtn-icon {
   justify-content: center;
   transition: background-color 0.2s ease, transform 0.2s ease;
   -webkit-transition: background-color 0.2s ease, transform 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.event-modal-close:focus {
+  outline: none;
+}
+
+.event-modal-close:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 2px;
 }
 
 .event-modal-close:hover {
@@ -2578,6 +2631,9 @@ header.nav.active .burgerBtn-icon {
   max-height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
 }
 
 .event-modal-body .modal-desc {
