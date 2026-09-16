@@ -59,7 +59,7 @@ export const eventUrl = [
     name: "SIBE",
     url: "/img/event/sibe.webp",
     logo: "/img/logo-sibe.webp",
-    desc: "SIBE, formerly known as HIMFACT (HIMSI FACTORY), is a program under HIMSI designed as a business venture with the goal of contributing to the organization's funds. SIBE operates by selling a variety of merchandise, including apparel and lanyards. These items are available for purchase by all members of KBM SI as well as individuals outside of KBM SI. The program not only helps in generating additional revenue for the organization but also provides an opportunity for the wider community to engage with and support HIMSI through their merchandise. By offering these products, SIBE aims to promote the organization's identity and foster a sense of belonging among its members and supporters.",
+    desc: "SIBE, formerly known as HIMFACT (HIMSI FACTORY), is a program under HIMSI designed as a business venture with the goal of contributing to the organization's funds. SIBE operates by offering exclusive merchandise, including apparel and lanyards, alongside SIBE Coffee to bring a complete lifestyle experience. These items are available for purchase by all members of KBM SI as well as individuals outside of KBM SI. The program not only helps in generating additional revenue for the organization but also provides an opportunity for the wider community to engage with and support HIMSI. Through curated merchandise and quality coffee, SIBE aims to promote the organization's identity, fuel daily productivity, and foster a strong sense of belonging among its members and supporters.",
   },
   {
     id: 7,

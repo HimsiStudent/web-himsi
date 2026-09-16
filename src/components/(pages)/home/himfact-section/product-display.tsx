@@ -18,8 +18,8 @@ export default function ProductDisplay() {
     },
     {
       id: 2,
-      productName: "jahim",
-      url: "/img/jahim_front.webp",
+      productName: "sibe_cafe",
+      url: "/img/sibe_coffee.webp",
       status: true,
     },
     {
@@ -81,9 +81,8 @@ export default function ProductDisplay() {
           onClick={() => handleClick(i)}
           key={i}
           id={`${i}`}
-          className={`img-wrapper product-${i + 1} ${
-            productActiveIndex === i ? "active" : ""
-          }`}
+          className={`img-wrapper product-${i + 1} ${productActiveIndex === i ? "active" : ""
+            }`}
           style={{ backgroundImage: `url(${product.url})` }}
         ></div>
       ))}
