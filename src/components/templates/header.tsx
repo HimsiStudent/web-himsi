@@ -54,7 +54,10 @@ export default function NavigationHeader() {
   }, []);
 
   useEffect(() => {
-    if (pathname === "/" && !isScrolled && isNavActive === false) {
+    const isHome = pathname === "/" || pathname === "/home";
+    const currentScrolled = typeof window !== "undefined" ? window.scrollY > 0 : false;
+    setScrolled(currentScrolled);
+    if (isHome && !currentScrolled && !isNavActive) {
       setActive(false);
     } else {
       setActive(true);

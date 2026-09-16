@@ -27,7 +27,7 @@ export function BackLink({ className }: { className?: string }) {
       >
         <path d="M19 12H5M11 6l-6 6 6 6" />
       </svg>
-      Kembali ke Beranda
+      Back to main page
     </Link>
   );
 }

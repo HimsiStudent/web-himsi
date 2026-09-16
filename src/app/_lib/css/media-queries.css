@@ -1252,6 +1252,16 @@
     font-size: 3rem;
   }
 
+  .eventPage-container .event-filter-bar {
+    padding: 24px 14px 10px 14px;
+    gap: 10px;
+  }
+
+  .eventPage-container .event-random-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
   .eventPage-container .wrapper-event {
     padding: 20px 14px 50px 14px;
     gap: 20px;

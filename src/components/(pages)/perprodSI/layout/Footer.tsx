@@ -132,7 +132,7 @@ export function Footer() {
               {exploreLinks.map((item) => {
                 const isHimsi = item.label === "HIMSI" || item.href === "/";
                 const LinkComponent = isHimsi ? "a" : Link;
-                
+
                 return (
                   <li key={item.href}>
                     <LinkComponent

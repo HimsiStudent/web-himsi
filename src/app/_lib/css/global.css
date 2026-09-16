@@ -2137,11 +2137,14 @@ header.nav.active .burgerBtn-icon {
   margin: 0;
 }
 
-/* ---------- Filter Tabs ---------- */
+/* ---------- Filter Tabs & Lucky Dice Picker ---------- */
 
 .eventPage-container .event-filter-bar {
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 40px clamp(16px, 4vw, 40px) 10px clamp(16px, 4vw, 40px);
   width: 100%;
 }
@@ -2207,6 +2210,62 @@ header.nav.active .burgerBtn-icon {
   background-color: var(--blue-himsi);
   box-shadow: 0 3px 10px rgba(38, 70, 133, 0.35);
   z-index: 1;
+}
+
+/* Tombol Acak Event (Lucky Dice Picker) */
+.eventPage-container .event-random-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.eventPage-container .event-random-btn:hover {
+  border-color: #cbd5e1;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  box-shadow: 0 4px 14px rgba(38, 70, 133, 0.12);
+  transform: translateY(-1px);
+}
+
+.eventPage-container .event-random-btn:active {
+  transform: scale(0.95);
+}
+
+.eventPage-container .event-random-btn:focus-visible {
+  outline: 2px solid var(--blue-himsi);
+  outline-offset: 2px;
+}
+
+.eventPage-container .event-random-btn .dice-icon {
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.eventPage-container .event-random-btn.is-rolling {
+  border-color: var(--orange-himsi);
+  color: var(--orange-himsi);
+  background: #fff7ed;
+  box-shadow: 0 4px 14px rgba(241, 92, 45, 0.2);
 }
 
 /* ---------- Event Cards (Fluid & Responsive with Zoom) ---------- */
@@ -2380,6 +2439,7 @@ header.nav.active .burgerBtn-icon {
 
 /* Logo hover animation & interactive pointer */
 .eventPage-container .event .desc-wrapper .logo-wrapper {
+  position: relative;
   width: 75px;
   height: 75px;
   flex-shrink: 0;
@@ -2403,6 +2463,17 @@ header.nav.active .burgerBtn-icon {
 .eventPage-container .event .desc-wrapper .logo-wrapper:focus-visible {
   outline: 2px solid rgba(56, 189, 248, 0.6);
   outline-offset: 3px;
+}
+
+/* Partikel mengapung memancar saat logo ditekan (Boing-Boing) */
+.eventPage-container .event .desc-wrapper .logo-wrapper .logo-burst-particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10;
+  will-change: transform, opacity;
 }
 
 .eventPage-container .event .desc-wrapper .logo-wrapper img.event-logo-interactive {
@@ -2539,6 +2610,21 @@ header.nav.active .burgerBtn-icon {
   border-radius: 16px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   scrollbar-width: thin;
+}
+
+.random-pick-badge {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border-bottom: 1.5px solid #fed7aa;
+  color: #c2410c;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .event-modal-close {

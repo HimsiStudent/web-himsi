@@ -11,10 +11,21 @@ import {
 
 type FilterId = EventCategory | "all";
 
+type LogoParticle = {
+  id: number;
+  x: number;
+  y: number;
+  color: string;
+  size: number;
+};
+
 export default function EventsContainer() {
   const [activeFilter, setActiveFilter] = useState<FilterId>("all");
   const [openEventId, setOpenEventId] = useState<number | null>(null);
   const [logoAnims, setLogoAnims] = useState<Record<number, string>>({});
+  const [logoParticles, setLogoParticles] = useState<Record<number, LogoParticle[]>>({});
+  const [isRolling, setIsRolling] = useState(false);
+  const [isRandomPick, setIsRandomPick] = useState(false);
 
   const triggerRandomLogoAnim = (id: number) => {
     const anims = [
@@ -33,6 +44,67 @@ export default function EventsContainer() {
     setLogoAnims((prev) => ({ ...prev, [id]: "" }));
   };
 
+  // Interaksi seru saat logo ditekan di HP / desktop: squish, partikel, & getar halus
+  const triggerLogoSquish = (id: number) => {
+    triggerRandomLogoAnim(id);
+
+    // Haptic feedback getar halus di HP (jika didukung)
+    if (typeof window !== "undefined" && "vibrate" in navigator) {
+      try {
+        navigator.vibrate(18);
+      } catch { }
+    }
+
+    // Buat partikel warna-warni memancar dari logo
+    const count = 6;
+    const colors = ["#f15c2d", "#264685", "#fbbf24", "#38bdf8", "#ec4899"];
+    const newParticles: LogoParticle[] = Array.from({ length: count }).map((_, i) => {
+      const angle = (i * (360 / count) + (Math.random() * 30 - 15)) * (Math.PI / 180);
+      const distance = 26 + Math.random() * 22;
+      return {
+        id: Date.now() + Math.random(),
+        x: Math.cos(angle) * distance,
+        y: Math.sin(angle) * distance,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        size: Math.floor(Math.random() * 3) + 6,
+      };
+    });
+
+    setLogoParticles((prev) => ({
+      ...prev,
+      [id]: [...(prev[id] || []).slice(-12), ...newParticles],
+    }));
+
+    // Bersihkan partikel setelah animasi selesai
+    setTimeout(() => {
+      setLogoParticles((prev) => ({
+        ...prev,
+        [id]: (prev[id] || []).filter((p) => !newParticles.some((np) => np.id === p.id)),
+      }));
+    }, 600);
+  };
+
+  // Fitur dadu acak (Lucky Dice Event Picker)
+  const handleRollRandomEvent = () => {
+    if (isRolling) return;
+    setIsRolling(true);
+
+    // Haptic ritmis seperti dadu menggelinding
+    if (typeof window !== "undefined" && "vibrate" in navigator) {
+      try {
+        navigator.vibrate([20, 50, 20, 50, 30]);
+      } catch { }
+    }
+
+    setTimeout(() => {
+      const randomIdx = Math.floor(Math.random() * eventUrl.length);
+      const selected = eventUrl[randomIdx];
+      setIsRolling(false);
+      setIsRandomPick(true);
+      setOpenEventId(selected.id);
+    }, 600);
+  };
+
   const visibleEvents = useMemo(
     () =>
       activeFilter === "all"
@@ -47,7 +119,10 @@ export default function EventsContainer() {
     if (!openedEvent) return;
 
     const closeOnEscape = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpenEventId(null);
+      if (e.key === "Escape") {
+        setOpenEventId(null);
+        setIsRandomPick(false);
+      }
     };
 
     document.body.style.overflow = "hidden";
@@ -90,6 +165,31 @@ export default function EventsContainer() {
               );
             })}
           </div>
+
+          {/* Tombol Interaktif Acak Event (Lucky Dice) */}
+          <button
+            type="button"
+            className={`event-random-btn${isRolling ? " is-rolling" : ""}`}
+            onClick={handleRollRandomEvent}
+            title="Bingung mau lihat apa? Klik untuk pilihkan event acak!"
+            aria-label="Pilihkan event acak untukku"
+          >
+            <motion.span
+              className="dice-icon"
+              animate={
+                isRolling
+                  ? {
+                    rotate: [0, 180, 360, 540, 720],
+                    scale: [1, 1.25, 0.9, 1.2, 1],
+                  }
+                  : { rotate: 0, scale: 1 }
+              }
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+            >
+              🎲
+            </motion.span>
+            <span className="dice-text">{isRolling ? "Rolling..." : "Random Pick"}</span>
+          </button>
         </div>
 
         <motion.div
@@ -101,7 +201,15 @@ export default function EventsContainer() {
         >
           {visibleEvents.map((event) => (
             <article key={event.id} className="event">
-              <div className="img-wrapper">
+              <div
+                className="img-wrapper"
+                onClick={() => {
+                  setIsRandomPick(false);
+                  setOpenEventId(event.id);
+                }}
+                style={{ cursor: "pointer" }}
+                title={`Klik untuk melihat detail ${event.name}`}
+              >
                 <Image
                   priority
                   alt={event.name}
@@ -113,18 +221,21 @@ export default function EventsContainer() {
               <div className="desc-wrapper">
                 <div className="title">
                   <h2>{event.name}</h2>
-                  <div
+                  <motion.div
                     className="logo-wrapper"
-                    onClick={() => setOpenEventId(event.id)}
+                    whileTap={{ scale: 0.82 }}
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 450, damping: 18 }}
+                    onClick={() => triggerLogoSquish(event.id)}
                     onMouseEnter={() => triggerRandomLogoAnim(event.id)}
                     onMouseLeave={() => clearLogoAnim(event.id)}
-                    title={`Klik untuk melihat detail ${event.name}`}
+                    title={`Tekan logo ${event.name}!`}
                     role="button"
                     tabIndex={0}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
-                        setOpenEventId(event.id);
+                        triggerLogoSquish(event.id);
                       }
                     }}
                   >
@@ -138,13 +249,41 @@ export default function EventsContainer() {
                         height={1000}
                       />
                     )}
-                  </div>
+
+                    {/* Partikel mini melayang saat logo ditekan */}
+                    <AnimatePresence>
+                      {(logoParticles[event.id] || []).map((p) => (
+                        <motion.span
+                          key={p.id}
+                          className="logo-burst-particle"
+                          style={{
+                            width: p.size,
+                            height: p.size,
+                            backgroundColor: p.color,
+                            boxShadow: `0 0 8px ${p.color}`,
+                          }}
+                          initial={{ x: 0, y: 0, opacity: 1, scale: 1 }}
+                          animate={{
+                            x: p.x,
+                            y: p.y - 12,
+                            opacity: 0,
+                            scale: 0.35,
+                          }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 0.55, ease: "easeOut" }}
+                        />
+                      ))}
+                    </AnimatePresence>
+                  </motion.div>
                 </div>
                 <p className="desc">{event.desc}</p>
                 <button
                   type="button"
                   className="read-more"
-                  onClick={() => setOpenEventId(event.id)}
+                  onClick={() => {
+                    setIsRandomPick(false);
+                    setOpenEventId(event.id);
+                  }}
                 >
                   Lihat Selengkapnya{" "}
                   <span className="arrow" aria-hidden="true">
@@ -169,20 +308,32 @@ export default function EventsContainer() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.18, ease: "easeOut" }}
-            onClick={() => setOpenEventId(null)}
+            onClick={() => {
+              setOpenEventId(null);
+              setIsRandomPick(false);
+            }}
           >
             <motion.div
               className="event-modal"
-              initial={{ opacity: 0, scale: 0.98, y: 6 }}
+              initial={{ opacity: 0, scale: 0.96, y: 8 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.98, y: 6 }}
+              exit={{ opacity: 0, scale: 0.96, y: 8 }}
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
               onClick={(e) => e.stopPropagation()}
             >
+              {isRandomPick && (
+                <div className="random-pick-badge">
+                  <span>Random pick event for you to see!</span>
+                </div>
+              )}
+
               <button
                 type="button"
                 className="event-modal-close"
-                onClick={() => setOpenEventId(null)}
+                onClick={() => {
+                  setOpenEventId(null);
+                  setIsRandomPick(false);
+                }}
                 aria-label="Tutup"
               >
                 &times;

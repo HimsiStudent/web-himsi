@@ -23,7 +23,7 @@ export default function Navigation({
   const [isHomePage, setHomePage] = useState(true);
 
   useEffect(() => {
-    if (pathname !== "/") {
+    if (pathname !== "/" && pathname !== "/home") {
       setPageActive(true);
       setHomePage(false);
     } else {
