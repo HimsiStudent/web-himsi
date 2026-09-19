@@ -17,22 +17,32 @@ interface TimelineProps {
 export default function TimelineLine({ gens, timelineRef }: TimelineProps) {
   const lineRef = useRef<HTMLSpanElement>(null);
   useEffect(() => {
-    const handleScroll = () => {
+    let ticking = false;
+
+    const updateLine = () => {
       if (lineRef.current && timelineRef.current) {
         const viewportHeight = window.innerHeight;
         const scrollY = window.scrollY;
 
-        let newHeight =
+        const newHeight =
           scrollY - timelineRef.current.offsetTop + viewportHeight / 3;
 
         lineRef.current.style.height = `${newHeight}px`;
+      }
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateLine);
+        ticking = true;
       }
     };
 
     // Initial calculation
     handleScroll();
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

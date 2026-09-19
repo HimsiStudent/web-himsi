@@ -131,7 +131,7 @@ export default function HeroSectionAbout({
             }`}
           >
             <Image
-              priority
+              /* priority */
               alt={gen.name}
               src={gen.pict}
               width={1980}

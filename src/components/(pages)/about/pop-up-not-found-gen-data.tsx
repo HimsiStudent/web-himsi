@@ -47,7 +47,7 @@ export default function PopUpNotFoundGenData({
       <div className={`notFound-container ${isPopUpActive ? "active" : ""}`}>
         <div className="wrapper">
           <Image
-            priority
+            /* priority */
             alt="Sad Dog"
             src={"/img/sad-dog.webp"}
             width={1000}
