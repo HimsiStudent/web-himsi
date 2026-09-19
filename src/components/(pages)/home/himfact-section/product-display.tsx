@@ -6,8 +6,8 @@ export default function ProductDisplay() {
   const [product, setProduct] = useState([
     {
       id: 0,
-      productName: "himfact13_baju1",
-      url: "/img/himfact13_baju1.webp",
+      productName: "jahim",
+      url: "/img/jahim.webp",
       status: false,
     },
     {
