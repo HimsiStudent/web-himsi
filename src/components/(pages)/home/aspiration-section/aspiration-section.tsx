@@ -32,7 +32,7 @@ export default function AspirationSection() {
             className="btn-style-1"
             onClick={() => {
               window.open(
-                "https://forms.office.com/Pages/ResponsePage.aspx?id=FfM3v8K6qESubC8hNR0mTHfocJHESkxIuz3QBc8bN6hUN1RKOVZHUTVSSktCNDhLV1ZBU1EzNE5TSS4u",
+                "https://forms.cloud.microsoft/pages/responsepage.aspx?id=FfM3v8K6qESubC8hNR0mTLO_N9BphzFGmqlysxWtjflUMzJCUDk5UkE0NjFQUDYyMlpVV1dWNDMyTC4u&route=shorturl",
                 "_blank"
               );
             }}
